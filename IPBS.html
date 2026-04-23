@@ -1,0 +1,3149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>IBPS SO IT Officer · Prep Hub · by Ishan Chakraborty</title>
+<meta name="description" content="A complete preparation hub for IBPS SO IT Officer Scale I — syllabus, exam pattern, 12-month roadmap, salary structure, mock tests, and curated resources. Built by Ishan Chakraborty." />
+<meta name="author" content="Ishan Chakraborty" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=Merriweather:wght@400;700;900&family=Libre+Baskerville:wght@400;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    /* Official Government of India palette */
+    --saffron: #FF9933;
+    --saffron-dim: #CC6E14;
+    --white: #FFFFFF;
+    --green: #138808;
+    --green-dim: #0F6A05;
+    --ashoka-navy: #000080;
+    --ashoka-navy-dim: #00005C;
+
+    /* Background system - parchment/cream with navy accents for official feel */
+    --bg: #FAF7F0;
+    --bg-2: #F3EEE1;
+    --bg-3: #EBE4D1;
+    --surface: #FFFFFF;
+    --surface-2: #FDFBF5;
+    --border: #D9CFB4;
+    --border-strong: #8B7A56;
+
+    /* Text */
+    --text: #1A1A1A;
+    --text-dim: #4A4A4A;
+    --text-mute: #7A7156;
+    --text-navy: #000080;
+
+    /* Accents */
+    --accent: #000080;
+    --accent-dim: #00005C;
+    --accent-hover: #1A1AB3;
+    --amber: #B8860B;
+    --red: #A52A2A;
+
+    --radius: 6px;
+    --radius-lg: 10px;
+    --shadow: 0 2px 8px rgba(0, 0, 128, 0.08), 0 1px 2px rgba(0, 0, 0, 0.04);
+    --shadow-hover: 0 8px 24px rgba(0, 0, 128, 0.12), 0 2px 6px rgba(0, 0, 0, 0.06);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    background-image:
+      radial-gradient(circle at 1px 1px, rgba(0, 0, 128, 0.04) 1px, transparent 0);
+    background-size: 24px 24px;
+  }
+
+  ::selection { background: var(--saffron); color: var(--ashoka-navy); }
+
+  h1, h2, h3, h4 {
+    font-family: 'Merriweather', 'Libre Baskerville', Georgia, serif;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    margin: 0;
+    color: var(--text);
+  }
+
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 3px; }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ============ TRICOLOR STRIP ============ */
+  .tricolor-strip {
+    height: 4px;
+    background: linear-gradient(
+      to bottom,
+      var(--saffron) 0%,
+      var(--saffron) 33%,
+      var(--white) 33%,
+      var(--white) 66%,
+      var(--green) 66%,
+      var(--green) 100%
+    );
+    position: sticky;
+    top: 0;
+    z-index: 51;
+  }
+
+  /* ============ NAVBAR ============ */
+  .nav {
+    position: sticky;
+    top: 4px;
+    z-index: 50;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+  }
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+  }
+  .brand {
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+    font-size: 1.05rem;
+    letter-spacing: 0.01em;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--ashoka-navy);
+  }
+  .brand-emblem {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+  }
+  .brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+  }
+  .brand-text .brand-main {
+    font-size: 0.95rem;
+    color: var(--ashoka-navy);
+    font-weight: 900;
+  }
+  .brand-text .brand-sub {
+    font-size: 0.68rem;
+    color: var(--text-mute);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+  .brand-dot { display: none; }
+  .nav-links {
+    display: flex;
+    gap: 26px;
+    list-style: none;
+    margin: 0; padding: 0;
+  }
+  .nav-links a {
+    color: var(--text-dim);
+    font-size: 0.88rem;
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+    padding: 6px 2px;
+    transition: color 0.2s;
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; left: 0;
+    width: 0; height: 2px;
+    background: var(--saffron);
+    transition: width 0.25s ease;
+  }
+  .nav-links a:hover, .nav-links a.active {
+    color: var(--ashoka-navy);
+    text-decoration: none;
+  }
+  .nav-links a.active::after,
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+  .nav-toggle {
+    display: none;
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  @media (max-width: 860px) {
+    .nav-links { display: none; }
+    .nav-links.open {
+      display: flex;
+      position: absolute;
+      top: 72px; left: 0; right: 0;
+      flex-direction: column;
+      background: var(--white);
+      padding: 20px 24px;
+      border-bottom: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+    .nav-toggle { display: block; }
+  }
+
+  /* ============ TRICOLOR STRIP ============ */
+  .tricolor-strip {
+    height: 4px;
+    background: linear-gradient(to bottom, var(--saffron) 0%, var(--saffron) 33%, var(--white) 33%, var(--white) 66%, var(--green) 66%, var(--green) 100%);
+    position: sticky;
+    top: 0;
+    z-index: 51;
+  }
+
+  /* ============ HERO ============ */
+  .hero {
+    position: relative;
+    padding: 80px 0 90px;
+    overflow: hidden;
+    background: linear-gradient(180deg, #FDFCF7 0%, #F5EFE0 100%);
+    border-bottom: 1px solid var(--border);
+  }
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(ellipse at 15% 20%, rgba(255, 153, 51, 0.12), transparent 50%),
+      radial-gradient(ellipse at 85% 80%, rgba(19, 136, 8, 0.08), transparent 50%);
+    pointer-events: none;
+  }
+  .hero-grid {
+    position: absolute;
+    inset: 0;
+    opacity: 0.4;
+    background-image:
+      linear-gradient(rgba(0, 0, 128, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 0, 128, 0.04) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(ellipse at center, black 20%, transparent 75%);
+    -webkit-mask-image: radial-gradient(ellipse at center, black 20%, transparent 75%);
+    animation: gridShift 40s linear infinite;
+  }
+  @keyframes gridShift {
+    from { background-position: 0 0, 0 0; }
+    to { background-position: 48px 48px, 48px 48px; }
+  }
+  .hero-dots {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.25;
+  }
+  .hero-chakra {
+    position: absolute;
+    right: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 520px;
+    height: 520px;
+    opacity: 0.06;
+    pointer-events: none;
+    animation: chakraSpin 120s linear infinite;
+  }
+  @keyframes chakraSpin {
+    from { transform: translateY(-50%) rotate(0deg); }
+    to { transform: translateY(-50%) rotate(360deg); }
+  }
+  @media (max-width: 860px) {
+    .hero-chakra { width: 340px; height: 340px; right: -140px; opacity: 0.05; }
+  }
+  .hero-inner {
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    max-width: 900px;
+  }
+  .official-ribbon {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 16px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--saffron);
+    border-radius: 2px;
+    margin-bottom: 28px;
+    box-shadow: var(--shadow);
+  }
+  .official-ribbon .dot-saffron, .official-ribbon .dot-green {
+    width: 8px; height: 8px; border-radius: 50%; display: inline-block;
+  }
+  .official-ribbon .dot-saffron { background: var(--saffron); }
+  .official-ribbon .dot-green { background: var(--green); }
+  .official-ribbon-text {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    font-weight: 500;
+  }
+  .official-ribbon-text strong {
+    color: var(--ashoka-navy);
+    font-weight: 700;
+  }
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 14px;
+    border: 1px solid var(--accent);
+    border-radius: 3px;
+    background: rgba(0, 0, 128, 0.04);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--ashoka-navy);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    font-weight: 500;
+  }
+  .eyebrow::before {
+    content: '';
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--saffron);
+  }
+  .hero h1 {
+    font-family: 'Merriweather', serif;
+    font-size: clamp(2.4rem, 5.5vw, 4.4rem);
+    font-weight: 900;
+    margin-bottom: 18px;
+    letter-spacing: -0.015em;
+    color: var(--ashoka-navy);
+    line-height: 1.08;
+  }
+  .hero h1 .devanagari {
+    display: block;
+    font-family: 'Tiro Devanagari Hindi', serif;
+    font-size: 0.4em;
+    color: var(--text-dim);
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    margin-bottom: 10px;
+  }
+  .hero h1 .accent {
+    color: var(--saffron-dim);
+    font-style: italic;
+    font-weight: 900;
+    background: none;
+    -webkit-background-clip: initial;
+    background-clip: initial;
+  }
+  .hero-sub {
+    font-size: clamp(1.05rem, 2vw, 1.3rem);
+    color: var(--text-dim);
+    font-weight: 400;
+    margin-bottom: 36px;
+    min-height: 2em;
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+  }
+  .hero-sub .type-wrap {
+    color: var(--ashoka-navy);
+    border-right: 2px solid var(--saffron);
+    padding-right: 4px;
+    animation: blink 0.8s step-end infinite;
+    font-weight: 700;
+    font-style: normal;
+  }
+  @keyframes blink { 50% { border-color: transparent; } }
+  .cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 24px;
+    border-radius: 4px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.92rem;
+    cursor: pointer;
+    border: 1.5px solid transparent;
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s;
+    letter-spacing: 0.01em;
+  }
+  .btn-primary {
+    background: var(--ashoka-navy);
+    color: var(--white);
+    border-color: var(--ashoka-navy);
+    box-shadow: 0 4px 14px rgba(0, 0, 128, 0.25);
+  }
+  .btn-primary:hover {
+    background: var(--accent-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(0, 0, 128, 0.35);
+    text-decoration: none;
+    color: var(--white);
+  }
+  .btn-ghost {
+    background: var(--white);
+    color: var(--ashoka-navy);
+    border-color: var(--accent);
+  }
+  .btn-ghost:hover {
+    background: var(--ashoka-navy);
+    color: var(--white);
+    text-decoration: none;
+  }
+  .btn .arrow { transition: transform 0.2s; }
+  .btn:hover .arrow { transform: translateX(3px); }
+
+  .hero-meta {
+    position: absolute;
+    right: 28px;
+    bottom: 40px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--text-mute);
+    text-align: right;
+    line-height: 1.8;
+    z-index: 2;
+    padding: 14px 18px;
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    backdrop-filter: blur(4px);
+  }
+  .hero-meta span { color: var(--ashoka-navy); font-weight: 600; }
+  @media (max-width: 860px) { .hero-meta { display: none; } }
+
+  /* ============ SECTIONS ============ */
+  section {
+    padding: 80px 0;
+    position: relative;
+  }
+  section + section { border-top: 1px solid var(--border); }
+  .section-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--ashoka-navy);
+    position: relative;
+  }
+  .section-head::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; left: 0;
+    width: 80px; height: 2px;
+    background: var(--saffron);
+  }
+  .section-head .kicker {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--saffron-dim);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+  .section-head h2 {
+    font-family: 'Merriweather', serif;
+    font-size: clamp(1.8rem, 3.8vw, 2.8rem);
+    color: var(--ashoka-navy);
+    font-weight: 900;
+  }
+  .section-head .lead {
+    color: var(--text-dim);
+    max-width: 440px;
+    font-size: 0.98rem;
+    line-height: 1.6;
+  }
+
+  /* Fade up animation */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  .fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  /* Failsafe: if JS fails / is slow, show content after 2s */
+  @keyframes forceReveal {
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .fade-up {
+    animation: forceReveal 0.8s ease 2s forwards;
+  }
+
+  /* ============ OVERVIEW CARDS ============ */
+  .overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  .stat-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--ashoka-navy);
+    border-radius: var(--radius);
+    padding: 24px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s, border-color 0.2s;
+    box-shadow: var(--shadow);
+  }
+  .stat-card:nth-child(2) { border-top-color: var(--saffron); }
+  .stat-card:nth-child(3) { border-top-color: var(--green); }
+  .stat-card:nth-child(4) { border-top-color: var(--ashoka-navy); }
+  .stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover);
+  }
+  .stat-card::before { display: none; }
+  .stat-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.68rem;
+    color: var(--text-mute);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  .stat-value {
+    font-family: 'Merriweather', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--ashoka-navy);
+    line-height: 1.25;
+  }
+  .intro-para {
+    color: var(--text-dim);
+    max-width: 820px;
+    font-size: 1.02rem;
+    line-height: 1.75;
+  }
+
+  /* ============ EXAM PATTERN TABLE ============ */
+  .pattern-wrap { overflow-x: auto; }
+  .pattern-title {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin: 36px 0 16px;
+    color: var(--ashoka-navy);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .pattern-title::before {
+    content: '';
+    width: 5px; height: 22px;
+    background: var(--saffron);
+    border-radius: 1px;
+  }
+  .pattern-title.amber::before { background: var(--green); }
+  table.pattern {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+    background: var(--white);
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+  }
+  table.pattern th {
+    background: var(--ashoka-navy);
+    color: var(--white);
+    padding: 14px 18px;
+    font-weight: 600;
+    text-align: left;
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--border);
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+  table.pattern td {
+    padding: 14px 18px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+    font-size: 0.94rem;
+  }
+  table.pattern tr:last-child td { border-bottom: none; }
+  table.pattern tr:nth-child(even) td { background: var(--bg-2); }
+  table.pattern tr:hover td { background: rgba(255, 153, 51, 0.08); }
+  table.pattern .total td {
+    background: rgba(0, 0, 128, 0.06);
+    font-weight: 700;
+    color: var(--ashoka-navy);
+  }
+  .neg-note {
+    margin-top: 22px;
+    padding: 14px 18px;
+    background: rgba(165, 42, 42, 0.05);
+    border-left: 3px solid var(--red);
+    border-radius: 3px;
+    font-size: 0.92rem;
+    color: var(--text-dim);
+  }
+  .neg-note strong { color: var(--red); }
+
+  /* ============ SYLLABUS ACCORDION ============ */
+  .syllabus-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  @media (max-width: 820px) {
+    .syllabus-grid { grid-template-columns: 1fr; }
+  }
+  .syllabus-col h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+    color: var(--ashoka-navy);
+    letter-spacing: 0.01em;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--saffron);
+    display: inline-block;
+  }
+  .syllabus-col.mains h3 { border-bottom-color: var(--green); }
+  .accordion {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    margin-bottom: 8px;
+    overflow: hidden;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  }
+  .accordion:hover { border-color: var(--accent); box-shadow: var(--shadow); }
+  .accordion.open { border-color: var(--ashoka-navy); }
+  .accordion-header {
+    padding: 15px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 0.96rem;
+    color: var(--text);
+    user-select: none;
+  }
+  .accordion-header .icon {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.1rem;
+    color: var(--accent);
+    transition: transform 0.3s ease;
+    font-weight: 700;
+  }
+  .accordion.open .accordion-header {
+    color: var(--ashoka-navy);
+    font-weight: 600;
+  }
+  .accordion.open .accordion-header .icon {
+    transform: rotate(45deg);
+  }
+  .accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+    color: var(--text-dim);
+    font-size: 0.92rem;
+  }
+  .accordion-body-inner {
+    padding: 0 20px 18px;
+    line-height: 1.75;
+    border-top: 1px solid var(--border);
+    padding-top: 14px;
+    background: var(--bg-2);
+  }
+
+  /* ============ RECRUITMENT HISTORY ============ */
+  .recruit-callout {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--saffron);
+    border-radius: var(--radius);
+    padding: 18px 24px;
+    margin-bottom: 32px;
+    font-size: 0.96rem;
+    color: var(--text-dim);
+    box-shadow: var(--shadow);
+  }
+  .recruit-callout strong { color: var(--ashoka-navy); font-weight: 700; }
+  .bar-chart {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 32px 28px;
+    box-shadow: var(--shadow);
+  }
+  .bar-row {
+    display: grid;
+    grid-template-columns: 140px 1fr 90px;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 14px;
+  }
+  .bar-row:last-child { margin-bottom: 0; }
+  .bar-year {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.82rem;
+    color: var(--text);
+    font-weight: 500;
+  }
+  .bar-track {
+    height: 28px;
+    background: var(--bg-2);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+  }
+  .bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--ashoka-navy), #1A1AB3);
+    border-radius: 2px;
+    width: 0;
+    transition: width 1.4s cubic-bezier(0.25, 1, 0.5, 1);
+    position: relative;
+  }
+  .bar-fill.amber {
+    background: linear-gradient(90deg, var(--saffron-dim), var(--saffron));
+  }
+  .bar-fill.green {
+    background: linear-gradient(90deg, var(--green-dim), var(--green));
+  }
+  .bar-value {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.88rem;
+    color: var(--ashoka-navy);
+    text-align: right;
+    font-weight: 700;
+  }
+  @media (max-width: 560px) {
+    .bar-row { grid-template-columns: 100px 1fr 70px; gap: 10px; }
+    .bar-year { font-size: 0.72rem; }
+  }
+
+  /* ============ ROADMAP ============ */
+  .roadmap {
+    position: relative;
+    padding-left: 36px;
+  }
+  .roadmap::before {
+    content: '';
+    position: absolute;
+    left: 11px;
+    top: 12px; bottom: 12px;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--saffron), var(--ashoka-navy), var(--green));
+    opacity: 0.35;
+  }
+  .milestone {
+    position: relative;
+    margin-bottom: 22px;
+    padding: 24px 26px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--ashoka-navy);
+    border-radius: var(--radius);
+    transition: transform 0.2s, box-shadow 0.2s, border-left-color 0.2s;
+    box-shadow: var(--shadow);
+  }
+  .milestone:hover {
+    transform: translateX(4px);
+    box-shadow: var(--shadow-hover);
+  }
+  .milestone::before {
+    content: '';
+    position: absolute;
+    left: -31px;
+    top: 28px;
+    width: 14px; height: 14px;
+    border-radius: 50%;
+    background: var(--white);
+    border: 3px solid var(--ashoka-navy);
+    box-shadow: 0 0 0 3px var(--bg);
+  }
+  .milestone:nth-child(3n+2) { border-left-color: var(--saffron); }
+  .milestone:nth-child(3n+2)::before { border-color: var(--saffron); }
+  .milestone:nth-child(3n) { border-left-color: var(--green); }
+  .milestone:nth-child(3n)::before { border-color: var(--green); }
+  .milestone-head {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+  }
+  .milestone-icon {
+    font-size: 1.5rem;
+  }
+  .milestone-phase {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--ashoka-navy);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 4px 10px;
+    background: rgba(0, 0, 128, 0.08);
+    border-radius: 3px;
+    font-weight: 600;
+    border: 1px solid rgba(0, 0, 128, 0.15);
+  }
+  .milestone:nth-child(3n+2) .milestone-phase {
+    color: var(--saffron-dim);
+    background: rgba(255, 153, 51, 0.1);
+    border-color: rgba(255, 153, 51, 0.25);
+  }
+  .milestone:nth-child(3n) .milestone-phase {
+    color: var(--green-dim);
+    background: rgba(19, 136, 8, 0.08);
+    border-color: rgba(19, 136, 8, 0.2);
+  }
+  .milestone h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.12rem;
+    margin-bottom: 0;
+    color: var(--text);
+  }
+  .milestone ul {
+    margin: 10px 0 0;
+    padding-left: 20px;
+    color: var(--text-dim);
+    font-size: 0.93rem;
+    line-height: 1.7;
+  }
+  .milestone ul li { margin-bottom: 5px; }
+  .milestone ul li strong { color: var(--text); font-weight: 600; }
+
+  /* ============ MILESTONE RESOURCES ============ */
+  .milestone-resources {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px dashed var(--border);
+  }
+  .milestone-resources-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--text-mute);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+  }
+  .mr-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .mr-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    background: var(--white);
+    border: 1px solid var(--accent);
+    border-radius: 3px;
+    font-size: 0.78rem;
+    color: var(--ashoka-navy);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+  .mr-chip:hover {
+    background: var(--ashoka-navy);
+    color: var(--white);
+    text-decoration: none;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(0,0,128,0.2);
+  }
+  .mr-chip::before {
+    content: '▸';
+    font-size: 0.7rem;
+    color: var(--saffron);
+  }
+  .mr-chip:hover::before { color: var(--saffron); }
+
+  /* ============ SALARY SECTION ============ */
+  .salary-hero {
+    background: var(--ashoka-navy);
+    color: var(--white);
+    border: 1px solid var(--ashoka-navy);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+  @media (max-width: 820px) {
+    .salary-hero { grid-template-columns: repeat(2, 1fr); padding: 28px; }
+  }
+  @media (max-width: 480px) {
+    .salary-hero { grid-template-columns: 1fr; }
+  }
+  .salary-stat-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  .salary-stat-value {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--white);
+    line-height: 1.1;
+    margin-bottom: 4px;
+  }
+  .salary-stat-sub {
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  .breakdown-wrap {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 28px;
+    margin-bottom: 36px;
+    overflow-x: auto;
+    box-shadow: var(--shadow);
+  }
+  .breakdown-title {
+    font-family: 'Merriweather', serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--ashoka-navy);
+  }
+  .breakdown-title::before {
+    content: '';
+    width: 5px; height: 22px;
+    background: var(--saffron);
+    border-radius: 1px;
+  }
+  .breakdown-table {
+    width: 100%;
+    min-width: 520px;
+    border-collapse: collapse;
+  }
+  .breakdown-table th {
+    text-align: left;
+    padding: 10px 14px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--text-mute);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    border-bottom: 2px solid var(--ashoka-navy);
+    font-weight: 600;
+  }
+  .breakdown-table td {
+    padding: 13px 14px;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.93rem;
+    color: var(--text);
+  }
+  .breakdown-table tr:last-child td { border-bottom: none; }
+  .breakdown-table td:first-child { color: var(--text); font-weight: 500; }
+  .breakdown-table td:last-child { color: var(--ashoka-navy); font-family: 'IBM Plex Mono', monospace; text-align: right; font-weight: 600; }
+  .breakdown-table tr.highlight td {
+    background: rgba(255, 153, 51, 0.08);
+    font-weight: 700;
+  }
+  .breakdown-table tr.highlight td:first-child { color: var(--ashoka-navy); }
+  .breakdown-table tr.highlight td:last-child { color: var(--saffron-dim); }
+  .breakdown-table tr.deduct td:last-child { color: var(--red); }
+
+  /* Salary progression timeline */
+  .progression {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 14px;
+    margin-bottom: 36px;
+  }
+  .prog-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 22px 20px;
+    position: relative;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: var(--shadow);
+  }
+  .prog-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover);
+  }
+  .prog-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--saffron), var(--ashoka-navy), var(--green));
+  }
+  .prog-year {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--saffron-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  .prog-basic {
+    font-family: 'Merriweather', serif;
+    font-size: 1.35rem;
+    font-weight: 900;
+    color: var(--ashoka-navy);
+    margin-bottom: 4px;
+  }
+  .prog-basic .label {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 0.7rem;
+    color: var(--text-mute);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    display: block;
+    margin-top: 2px;
+  }
+  .prog-gross {
+    color: var(--green-dim);
+    font-size: 0.88rem;
+    font-weight: 600;
+    margin-top: 8px;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+
+  /* Promotion ladder */
+  .ladder { display: grid; gap: 8px; }
+  .ladder-step {
+    display: grid;
+    grid-template-columns: 60px 1fr auto;
+    align-items: center;
+    gap: 20px;
+    padding: 18px 22px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--ashoka-navy);
+    border-radius: var(--radius);
+    position: relative;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  }
+  .ladder-step:hover {
+    transform: translateX(4px);
+    box-shadow: var(--shadow);
+  }
+  @media (max-width: 640px) {
+    .ladder-step { grid-template-columns: 50px 1fr; gap: 14px; padding: 16px; }
+    .ladder-step .ladder-time { grid-column: 1 / -1; justify-self: start; }
+  }
+  .ladder-num {
+    width: 44px; height: 44px;
+    border-radius: 6px;
+    background: var(--ashoka-navy);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+    font-size: 1rem;
+    flex-shrink: 0;
+    border: 2px solid var(--saffron);
+  }
+  .ladder-role {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 1.02rem;
+    color: var(--text);
+    margin-bottom: 3px;
+  }
+  .ladder-role .scale {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.68rem;
+    color: var(--saffron-dim);
+    background: rgba(255, 153, 51, 0.12);
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin-left: 10px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    border: 1px solid rgba(255, 153, 51, 0.25);
+  }
+  .ladder-desc {
+    font-size: 0.87rem;
+    color: var(--text-dim);
+    line-height: 1.5;
+  }
+  .ladder-time {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--ashoka-navy);
+    padding: 6px 12px;
+    background: rgba(0, 0, 128, 0.08);
+    border-radius: 3px;
+    white-space: nowrap;
+    font-weight: 600;
+    border: 1px solid rgba(0, 0, 128, 0.15);
+  }
+
+  .bipartite-note {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--green);
+    border-radius: var(--radius);
+    padding: 22px 26px;
+    margin-top: 26px;
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    box-shadow: var(--shadow);
+  }
+  .bipartite-note .bp-icon { font-size: 1.5rem; flex-shrink: 0; }
+  .bipartite-note h4 {
+    font-size: 1.08rem;
+    margin-bottom: 8px;
+    color: var(--ashoka-navy);
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+  }
+  .bipartite-note p {
+    font-size: 0.92rem;
+    color: var(--text-dim);
+    margin: 0;
+    line-height: 1.7;
+  }
+  .bipartite-note p strong { color: var(--ashoka-navy); font-weight: 700; }
+
+  /* ============ BANKS GRID ============ */
+  .banks-wrap {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 32px;
+    margin-top: 30px;
+    box-shadow: var(--shadow);
+  }
+  .banks-title {
+    font-family: 'Merriweather', serif;
+    font-size: 1.18rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--ashoka-navy);
+  }
+  .banks-title::before {
+    content: '';
+    width: 5px; height: 22px;
+    background: var(--green);
+    border-radius: 1px;
+  }
+  .banks-sub {
+    font-size: 0.9rem;
+    color: var(--text-dim);
+    margin-bottom: 22px;
+    line-height: 1.6;
+  }
+  .banks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+  }
+  .bank-pill {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    background: var(--bg-2);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    transition: all 0.2s;
+  }
+  .bank-pill:hover {
+    border-color: var(--ashoka-navy);
+    background: var(--white);
+    transform: translateX(2px);
+    box-shadow: var(--shadow);
+  }
+  .bank-pill .bank-num {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--saffron-dim);
+    font-weight: 700;
+    min-width: 22px;
+  }
+  .bank-pill .bank-name {
+    font-size: 0.9rem;
+    color: var(--text);
+    font-weight: 600;
+  }
+  .sbi-note {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--red);
+    border-radius: var(--radius);
+    padding: 22px 26px;
+    margin-top: 24px;
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    box-shadow: var(--shadow);
+  }
+  .sbi-note .sbi-icon { font-size: 1.5rem; flex-shrink: 0; }
+  .sbi-note h4 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+    color: var(--red);
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+  }
+  .sbi-note p {
+    font-size: 0.9rem;
+    color: var(--text-dim);
+    margin: 0;
+    line-height: 1.65;
+  }
+  .sbi-note p strong { color: var(--text); font-weight: 700; }
+
+  /* ============ QUIZ ============ */
+  .quiz-box {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-top: 4px solid var(--ashoka-navy);
+    border-radius: var(--radius-lg);
+    padding: 36px;
+    max-width: 820px;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: var(--shadow-hover);
+  }
+  @media (max-width: 560px) { .quiz-box { padding: 24px; } }
+  .quiz-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--text-mute);
+  }
+  .quiz-category {
+    padding: 4px 12px;
+    border-radius: 3px;
+    background: rgba(0, 0, 128, 0.08);
+    color: var(--ashoka-navy);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+    border: 1px solid rgba(0, 0, 128, 0.15);
+  }
+  .quiz-category.reasoning {
+    background: rgba(255, 153, 51, 0.12);
+    color: var(--saffron-dim);
+    border-color: rgba(255, 153, 51, 0.3);
+  }
+  .quiz-progress {
+    height: 5px;
+    background: var(--bg-2);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    margin-bottom: 28px;
+    overflow: hidden;
+  }
+  .quiz-progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, var(--saffron), var(--ashoka-navy), var(--green));
+    transition: width 0.4s ease;
+    border-radius: 1px;
+  }
+  .quiz-question {
+    font-family: 'Merriweather', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.45;
+    margin-bottom: 24px;
+    color: var(--ashoka-navy);
+  }
+  .quiz-options {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 22px;
+  }
+  .quiz-option {
+    background: var(--bg-2);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 14px 20px;
+    border-radius: 4px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 0.96rem;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.15s;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .quiz-option:hover:not(:disabled) {
+    border-color: var(--ashoka-navy);
+    background: var(--white);
+    transform: translateX(3px);
+    box-shadow: var(--shadow);
+  }
+  .quiz-option .letter {
+    display: inline-flex;
+    width: 28px; height: 28px;
+    align-items: center; justify-content: center;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: var(--ashoka-navy);
+    flex-shrink: 0;
+  }
+  .quiz-option.correct {
+    background: rgba(19, 136, 8, 0.1);
+    border-color: var(--green);
+    color: var(--green-dim);
+  }
+  .quiz-option.correct .letter { background: var(--green); color: var(--white); border-color: var(--green); }
+  .quiz-option.wrong {
+    background: rgba(165, 42, 42, 0.08);
+    border-color: var(--red);
+    color: var(--red);
+  }
+  .quiz-option.wrong .letter { background: var(--red); color: var(--white); border-color: var(--red); }
+  .quiz-option:disabled { cursor: default; }
+  .quiz-explanation {
+    margin-top: 18px;
+    padding: 16px 20px;
+    background: var(--bg-2);
+    border-left: 3px solid var(--saffron);
+    border-radius: 3px;
+    color: var(--text);
+    font-size: 0.93rem;
+    display: none;
+    line-height: 1.65;
+  }
+  .quiz-explanation.show { display: block; }
+  .quiz-explanation strong { color: var(--ashoka-navy); font-weight: 700; }
+  .quiz-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .quiz-score {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.9rem;
+    color: var(--text-dim);
+    font-weight: 500;
+  }
+  .quiz-score strong { color: var(--ashoka-navy); font-size: 1.1rem; font-weight: 700; }
+  .quiz-complete {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .quiz-complete h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    margin-bottom: 12px;
+    color: var(--ashoka-navy);
+    background: none;
+    -webkit-background-clip: initial;
+    background-clip: initial;
+    font-weight: 900;
+  }
+  .quiz-complete p {
+    color: var(--text-dim);
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }
+  .quiz-final-score {
+    font-family: 'Merriweather', serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--ashoka-navy);
+    margin: 20px 0;
+  }
+
+  /* ============ RESOURCES ============ */
+  .resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+  }
+  .resource-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    border-radius: var(--radius);
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s, border-color 0.25s;
+    position: relative;
+    overflow: hidden;
+  }
+  .resource-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--ashoka-navy);
+  }
+  .resource-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; height: 3px;
+    background: var(--ashoka-navy);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s;
+  }
+  .resource-card:hover::before { transform: scaleX(1); }
+  .resource-name {
+    font-family: 'Merriweather', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: var(--ashoka-navy);
+  }
+  .resource-desc {
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    margin-bottom: 14px;
+    flex-grow: 1;
+    line-height: 1.6;
+  }
+  .tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+  .tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.68rem;
+    padding: 3px 9px;
+    border-radius: 3px;
+    background: rgba(0, 0, 128, 0.08);
+    color: var(--ashoka-navy);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    border: 1px solid rgba(0, 0, 128, 0.12);
+  }
+  .tag.amber { background: rgba(255, 153, 51, 0.12); color: var(--saffron-dim); border-color: rgba(255, 153, 51, 0.25); }
+  .tag.free { background: rgba(19, 136, 8, 0.1); color: var(--green-dim); border-color: rgba(19, 136, 8, 0.2); }
+  .tag.paid { background: rgba(165, 42, 42, 0.08); color: var(--red); border-color: rgba(165, 42, 42, 0.2); }
+  .resource-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--ashoka-navy);
+    align-self: flex-start;
+    padding: 7px 14px;
+    border: 1.5px solid var(--ashoka-navy);
+    border-radius: 3px;
+    transition: all 0.2s;
+    text-decoration: none;
+  }
+  .resource-link:hover {
+    background: var(--ashoka-navy);
+    color: var(--white);
+    text-decoration: none;
+  }
+
+  .resource-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  @media (max-width: 900px) { .resource-split { grid-template-columns: 1fr; } }
+  .resource-split h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--ashoka-navy);
+  }
+  .resource-split h3::before {
+    content: '';
+    width: 5px; height: 22px;
+    border-radius: 1px;
+    background: var(--saffron);
+  }
+  .resource-split .mock h3::before { background: var(--green); }
+
+  /* ============ FOOTER ============ */
+  footer {
+    border-top: 4px solid var(--ashoka-navy);
+    padding: 56px 0 0;
+    background: var(--bg-2);
+    position: relative;
+  }
+  footer::before {
+    content: '';
+    position: absolute;
+    top: -4px; left: 0; right: 0; height: 4px;
+    background: linear-gradient(to right, var(--saffron) 0%, var(--saffron) 33%, var(--white) 33%, var(--white) 66%, var(--green) 66%, var(--green) 100%);
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+  @media (max-width: 720px) {
+    .footer-grid { grid-template-columns: 1fr; }
+  }
+  .footer-about h4 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: var(--ashoka-navy);
+    font-weight: 700;
+  }
+  .footer-about p {
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    max-width: 440px;
+    line-height: 1.7;
+  }
+  .footer-col h5 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--saffron-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin: 0 0 14px;
+    font-weight: 700;
+  }
+  .footer-col ul {
+    list-style: none;
+    padding: 0; margin: 0;
+  }
+  .footer-col li { margin-bottom: 8px; }
+  .footer-col a {
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .footer-col a:hover { color: var(--ashoka-navy); text-decoration: underline; }
+  .footer-bottom {
+    border-top: 1px solid var(--border);
+    padding: 22px 0 26px;
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 14px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.78rem;
+    color: var(--text-mute);
+  }
+  .footer-bottom span.highlight { color: var(--ashoka-navy); font-weight: 700; }
+  .footer-bottom span.highlight.saffron { color: var(--saffron-dim); }
+</style>
+</head>
+<body>
+
+<!-- ============ TRICOLOR STRIP ============ -->
+<div class="tricolor-strip" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <div class="brand">
+      <!-- Ashoka Chakra emblem -->
+      <svg class="brand-emblem" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="Ashoka Chakra">
+        <circle cx="50" cy="50" r="46" fill="none" stroke="#000080" stroke-width="3"/>
+        <circle cx="50" cy="50" r="8" fill="#000080"/>
+        <g stroke="#000080" stroke-width="2" fill="none">
+          <!-- 24 spokes -->
+          <line x1="50" y1="6" x2="50" y2="94"/>
+          <line x1="6" y1="50" x2="94" y2="50"/>
+          <line x1="18.9" y1="18.9" x2="81.1" y2="81.1"/>
+          <line x1="18.9" y1="81.1" x2="81.1" y2="18.9"/>
+          <line x1="34" y1="8.8" x2="66" y2="91.2"/>
+          <line x1="8.8" y1="34" x2="91.2" y2="66"/>
+          <line x1="8.8" y1="66" x2="91.2" y2="34"/>
+          <line x1="34" y1="91.2" x2="66" y2="8.8"/>
+          <line x1="25.5" y1="12.5" x2="74.5" y2="87.5"/>
+          <line x1="12.5" y1="25.5" x2="87.5" y2="74.5"/>
+          <line x1="12.5" y1="74.5" x2="87.5" y2="25.5"/>
+          <line x1="25.5" y1="87.5" x2="74.5" y2="12.5"/>
+        </g>
+      </svg>
+      <div class="brand-text">
+        <span class="brand-main">IBPS SO · IT Officer</span>
+        <span class="brand-sub">Prep Hub · Scale I</span>
+      </div>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#overview" class="nav-a">Overview</a></li>
+      <li><a href="#pattern" class="nav-a">Pattern</a></li>
+      <li><a href="#syllabus" class="nav-a">Syllabus</a></li>
+      <li><a href="#roadmap" class="nav-a">Roadmap</a></li>
+      <li><a href="#salary" class="nav-a">Salary</a></li>
+      <li><a href="#quiz" class="nav-a">Quiz</a></li>
+      <li><a href="#resources" class="nav-a">Resources</a></li>
+      <li><a href="#pyqs" class="nav-a">PYQs</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <svg class="hero-dots" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <pattern id="circuit" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+        <circle cx="50" cy="50" r="1.2" fill="#000080" opacity="0.4"/>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#circuit)"/>
+  </svg>
+  <!-- Ashoka Chakra watermark -->
+  <svg class="hero-chakra" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <circle cx="50" cy="50" r="46" fill="none" stroke="#000080" stroke-width="1.5"/>
+    <circle cx="50" cy="50" r="6" fill="#000080"/>
+    <g stroke="#000080" stroke-width="0.8" fill="none">
+      <line x1="50" y1="4" x2="50" y2="96"/>
+      <line x1="4" y1="50" x2="96" y2="50"/>
+      <line x1="17.5" y1="17.5" x2="82.5" y2="82.5"/>
+      <line x1="17.5" y1="82.5" x2="82.5" y2="17.5"/>
+      <line x1="34" y1="7" x2="66" y2="93"/>
+      <line x1="7" y1="34" x2="93" y2="66"/>
+      <line x1="7" y1="66" x2="93" y2="34"/>
+      <line x1="34" y1="93" x2="66" y2="7"/>
+      <line x1="24.5" y1="10.5" x2="75.5" y2="89.5"/>
+      <line x1="10.5" y1="24.5" x2="89.5" y2="75.5"/>
+      <line x1="10.5" y1="75.5" x2="89.5" y2="24.5"/>
+      <line x1="24.5" y1="89.5" x2="75.5" y2="10.5"/>
+    </g>
+  </svg>
+  <div class="container hero-inner">
+    <div class="official-ribbon">
+      <span class="dot-saffron"></span>
+      <span class="official-ribbon-text">Institute of Banking Personnel Selection · <strong>Government of India</strong></span>
+      <span class="dot-green"></span>
+    </div>
+    <h1>
+      <span class="devanagari">आई बी पी एस · विशेषज्ञ अधिकारी भर्ती</span>
+      IBPS SO<br/><span class="accent">IT Officer</span> Scale&nbsp;I
+    </h1>
+    <p class="hero-sub">Your blueprint to <span class="type-wrap" id="typewriter">Crack the Exam</span></p>
+    <div class="cta-row">
+      <a href="#roadmap" class="btn btn-primary">Start Preparing <span class="arrow">→</span></a>
+      <a href="#syllabus" class="btn btn-ghost">View Syllabus</a>
+    </div>
+    <p style="margin-top:28px;font-family:'IBM Plex Mono',monospace;font-size:0.76rem;color:var(--text-mute);letter-spacing:0.05em">
+      /// prepared &amp; maintained by <span style="color:var(--ashoka-navy);font-weight:700">Ishan Chakraborty</span> — an aspirant walking the same path
+    </p>
+  </div>
+  <div class="hero-meta">
+    <div>/// mode: <span>ONLINE · CBT</span></div>
+    <div>/// cycle: <span>JUN — NOV 2026</span></div>
+    <div>/// crp: <span>SPL-XVI</span></div>
+  </div>
+</header>
+
+<!-- ============ OVERVIEW ============ -->
+<section id="overview">
+  <div class="container">
+    <div class="section-head fade-up">
+      <div>
+        <div class="kicker">// 01 — Exam Overview</div>
+        <h2>A quick snapshot of<br/>what you're signing up for.</h2>
+      </div>
+      <p class="lead">The IT Officer role is one of the most sought-after specialist posts across India's public sector banks — combining a technical career with banking stability.</p>
+    </div>
+    <div class="overview-grid fade-up">
+      <div class="stat-card">
+        <div class="stat-label">Conducting Body</div>
+        <div class="stat-value">IBPS</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Post</div>
+        <div class="stat-value">IT Officer, Scale I</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Mode</div>
+        <div class="stat-value">Online (CBT)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Language</div>
+        <div class="stat-value">English / Hindi</div>
+      </div>
+    </div>
+    <p class="intro-para fade-up">An IBPS SO IT Officer works on the technological backbone of public sector banks — maintaining core banking systems, supporting digital infrastructure, leading data security initiatives, and driving fintech adoption. The role blends a stable government-sector career with hands-on technology work, making it a top choice for CS/IT graduates seeking long-term growth.</p>
+  </div>
+</section>
+
+<!-- ============ EXAM PATTERN ============ -->
+<section id="pattern" style="background:var(--bg-2)">
+  <div class="container">
+    <div class="section-head fade-up">
+      <div>
+        <div class="kicker">// 02 — Exam Pattern</div>
+        <h2>Two stages.<br/>One interview. Zero shortcuts.</h2>
+      </div>
+      <p class="lead">The selection process consists of a Preliminary exam, a Mains exam with a Professional Knowledge paper, and a final interview round.</p>
+    </div>
+
+    <div class="fade-up">
+      <div class="pattern-title">Prelims · Online Exam</div>
+      <div class="pattern-wrap">
+        <table class="pattern">
+          <thead>
+            <tr>
+              <th>Section</th>
+              <th>Questions</th>
+              <th>Marks</th>
+              <th>Duration</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Reasoning</td><td>50</td><td>50</td><td>40 min</td></tr>
+            <tr><td>English Language</td><td>25</td><td>25</td><td>40 min</td></tr>
+            <tr><td>Quantitative Aptitude</td><td>50</td><td>50</td><td>40 min</td></tr>
+            <tr class="total"><td>Total</td><td>125</td><td>125</td><td>2 hours</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="fade-up">
+      <div class="pattern-title amber">Mains · Specialist Paper</div>
+      <div class="pattern-wrap">
+        <table class="pattern">
+          <thead>
+            <tr>
+              <th>Section</th>
+              <th>Questions</th>
+              <th>Marks</th>
+              <th>Duration</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Professional Knowledge (IT)</td><td>60</td><td>60</td><td>45 min</td></tr>
+            <tr><td>General Awareness + Reasoning + English + Quant (combined)</td><td>150</td><td>150</td><td>2 hr 30 min</td></tr>
+            <tr class="total"><td>Interview</td><td>—</td><td>100</td><td>—</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="neg-note">
+        <strong>Note:</strong> A penalty of <strong>0.25 marks</strong> is deducted for every wrong answer. No marks are deducted for unattempted questions.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SYLLABUS ============ -->
+<section id="syllabus">
+  <div class="container">
+    <div class="section-head fade-up">
+      <div>
+        <div class="kicker">// 03 — Syllabus</div>
+        <h2>Everything you need to cover,<br/>nothing you don't.</h2>
+      </div>
+      <p class="lead">Click any topic to expand. The Mains Professional Knowledge paper is where the competition is won or lost — prioritise it.</p>
+    </div>
+
+    <div class="syllabus-grid fade-up">
+      <!-- Prelims Column -->
+      <div class="syllabus-col">
+        <h3>Prelims · General Sections</h3>
+
+        <div class="accordion">
+          <div class="accordion-header"><span>Reasoning Ability</span><span class="icon">+</span></div>
+          <div class="accordion-body"><div class="accordion-body-inner">Puzzles, Seating Arrangement, Syllogisms, Coding–Decoding, Blood Relations, Directions, Inequalities, Alphanumeric Series, Input–Output, Data Sufficiency.</div></div>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-header"><span>Quantitative Aptitude</span><span class="icon">+</span></div>
+          <div class="accordion-body"><div class="accordion-body-inner">Number Series, Simplification & Approximation, Data Interpretation, Quadratic Equations, Profit & Loss, Time & Work, Time–Speed–Distance, Averages, Ratio & Proportion, Mensuration.</div></div>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-header"><span>English Language</span><span class="icon">+</span></div>
+          <div class="accordion-body"><div class="accordion-body-inner">Reading Comprehension, Cloze Test, Error Spotting, Fill in the Blanks, Para Jumbles, Sentence Improvement, Vocabulary & Idioms.</div></div>
+        </div>
+      </div>
+
+      <!-- Mains Column -->
+      <div class="syllabus-col mains">
+        <h3>Mains · Professional Knowledge (IT)</h3>
+
+        <div class="accordion">
+          <div class="accordion-header"><span>Data Structures & Algorithms</span><span class="icon">+</span></div>
+          <div class="accordion-body"><div class="accordion-body-inner">Arrays, Linked Lists, Stacks, Queues, Trees, Graphs, Hashing. Sorting & searching algorithms, time & space complexity (Big-O).</div></div>
+        </div>
+        <div class="accordion">
+          <div class="accordion-header"><span>Operating Systems</span><span class="icon">+</span></div>
+          <div class="accordion-body"><div class="accordion-body-inner">Process scheduling, deadlocks (detection, prevention, avoidance), memory management, paging & segmentation, synchronization primitives.</div></div>
+        </div>
+        <div class="accordion">
+          <div class="accordion-header"><span>Database Management Systems</span><span class="icon">+</span></div>
+          <div class="accordion-body"><div class="accordion-body-inner">ER modelling, Relational algebra, SQL queries, Normalization (1NF–BCNF), Transactions & concurrency control, ACID properties, Indexing.</div></div>
+        </div>
+        <div class="accordion">
+          <div class="accordion-header"><span>Computer Networks</span><span class="icon">+</span></div>
+          <div class="accordion-body"><div class="accordion-body-inner">OSI & TCP/IP models, IP addressing & subnetting, Protocols (HTTP, HTTPS, FTP, DNS, DHCP), Routing algorithms, LAN/WAN basics.</div></div>
+        </div>
+        <div class="accordion">
+          <div class="accordion-header"><span>Software Engineering</span><span class="icon">+</span></div>
+          <div class="accordion-body"><div class="accordion-body-inner">SDLC models (Waterfall, Spiral, Agile), Requirements engineering, Testing types (Unit, Integration, Regression), Software metrics.</div></div>
+        </div>
+        <div class="accordion">
+          <div class="accordion-header"><span>OOP Concepts (Java / C++)</span><span class="icon">+</span></div>
+          <div class="accordion-body"><div class="accordion-body-inner">Classes & Objects, Inheritance, Polymorphism, Encapsulation, Abstraction. Exception handling, Interfaces vs Abstract classes.</div></div>
+        </div>
+        <div class="accordion">
+          <div class="accordion-header"><span>Cyber Security Basics</span><span class="icon">+</span></div>
+          <div class="accordion-body"><div class="accordion-body-inner">CIA triad, Symmetric & asymmetric encryption, Hashing, Firewalls, IDS/IPS, Common attacks (SQL injection, XSS, phishing), Digital signatures.</div></div>
+        </div>
+        <div class="accordion">
+          <div class="accordion-header"><span>Cloud Computing & Virtualization</span><span class="icon">+</span></div>
+          <div class="accordion-body"><div class="accordion-body-inner">IaaS, PaaS, SaaS. Public/private/hybrid clouds. Hypervisors (Type 1 & 2). Containers vs VMs. Major providers (AWS, Azure, GCP) at a conceptual level.</div></div>
+        </div>
+        <div class="accordion">
+          <div class="accordion-header"><span>Web Technologies</span><span class="icon">+</span></div>
+          <div class="accordion-body"><div class="accordion-body-inner">HTML/CSS basics, HTTP methods & status codes, REST API design, Client–Server model, Sessions & cookies, Basic web security.</div></div>
+        </div>
+        <div class="accordion">
+          <div class="accordion-header"><span>Computer Organization & Architecture</span><span class="icon">+</span></div>
+          <div class="accordion-body"><div class="accordion-body-inner">Number systems, Logic gates, CPU components, Cache memory, Pipelining, Addressing modes, I/O techniques.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RECRUITMENT HISTORY ============ -->
+<section id="history" style="background:var(--bg-2)">
+  <div class="container">
+    <div class="section-head fade-up">
+      <div>
+        <div class="kicker">// 04 — IT Officer Vacancies &amp; Participating Banks</div>
+        <h2>IT Officer vacancies,<br/>cycle by cycle.</h2>
+      </div>
+      <p class="lead">Year-wise vacancies for <strong>IT Officer Scale I specifically</strong> — not the overall SO total. Figures sourced from official IBPS notifications. 2026–27 details awaited in June 2026.</p>
+    </div>
+
+    <div class="recruit-callout fade-up">
+      <strong>📅 2026–27 Cycle Timeline:</strong> Next notification (CRP SPL-XVI) expected in <strong>June 2026</strong>. The previous cycle (CRP SPL-XV) conducted Prelims on <strong>29 Aug 2026</strong>, Mains on <strong>1 Nov 2026</strong>; interviews scheduled Dec 2026 / Jan 2027.
+    </div>
+
+    <div class="bar-chart fade-up">
+      <div class="bar-row">
+        <div class="bar-year">2019–20</div>
+        <div class="bar-track"><div class="bar-fill" data-width="35"></div></div>
+        <div class="bar-value">76</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-year">2020–21</div>
+        <div class="bar-track"><div class="bar-fill amber" data-width="22"></div></div>
+        <div class="bar-value">48</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-year">2021–22</div>
+        <div class="bar-track"><div class="bar-fill green" data-width="100"></div></div>
+        <div class="bar-value">220</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-year">2022–23</div>
+        <div class="bar-track"><div class="bar-fill" data-width="88"></div></div>
+        <div class="bar-value">195</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-year">2023–24</div>
+        <div class="bar-track"><div class="bar-fill amber" data-width="55"></div></div>
+        <div class="bar-value">120</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-year">2024–25 · CRP SPL-XIV</div>
+        <div class="bar-track"><div class="bar-fill" data-width="77"></div></div>
+        <div class="bar-value">170</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-year">2025–26 · CRP SPL-XV</div>
+        <div class="bar-track"><div class="bar-fill green" data-width="80"></div></div>
+        <div class="bar-value">~175</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-year">2026–27 · CRP SPL-XVI</div>
+        <div class="bar-track"><div class="bar-fill amber" data-width="70"></div></div>
+        <div class="bar-value">TBA · Jun</div>
+      </div>
+    </div>
+
+    <p style="color:var(--text-mute);font-size:0.85rem;margin-top:14px;font-style:italic;line-height:1.65">
+      💡 <strong style="color:var(--ashoka-navy)">Important:</strong> These are <strong>IT Officer Scale I only</strong> vacancies, not the total SO count across all posts (which is usually 800–1,600). 2025–26 had 170 IT Officer seats out of 1,007 total SO seats with posts distributed as 346 AFO, 205 Marketing, 125 Law, 170 IT Officer, 25 HR, 25 Rajbhasha. Always verify from the official notification on ibps.in.
+    </p>
+
+    <!-- PARTICIPATING BANKS -->
+    <div class="banks-wrap fade-up">
+      <div class="banks-title">Participating Banks · IBPS SO 2026</div>
+      <p class="banks-sub">11 public sector banks participate in the Common Recruitment Process (CRP) for Specialist Officers. After post-merger consolidation, this list is now stable.</p>
+      <div class="banks-grid">
+        <div class="bank-pill"><span class="bank-num">01</span><span class="bank-name">Bank of Baroda</span></div>
+        <div class="bank-pill"><span class="bank-num">02</span><span class="bank-name">Bank of India</span></div>
+        <div class="bank-pill"><span class="bank-num">03</span><span class="bank-name">Bank of Maharashtra</span></div>
+        <div class="bank-pill"><span class="bank-num">04</span><span class="bank-name">Canara Bank</span></div>
+        <div class="bank-pill"><span class="bank-num">05</span><span class="bank-name">Central Bank of India</span></div>
+        <div class="bank-pill"><span class="bank-num">06</span><span class="bank-name">Indian Bank</span></div>
+        <div class="bank-pill"><span class="bank-num">07</span><span class="bank-name">Indian Overseas Bank</span></div>
+        <div class="bank-pill"><span class="bank-num">08</span><span class="bank-name">Punjab National Bank</span></div>
+        <div class="bank-pill"><span class="bank-num">09</span><span class="bank-name">Punjab &amp; Sind Bank</span></div>
+        <div class="bank-pill"><span class="bank-num">10</span><span class="bank-name">UCO Bank</span></div>
+        <div class="bank-pill"><span class="bank-num">11</span><span class="bank-name">Union Bank of India</span></div>
+      </div>
+
+      <!-- SBI clarification -->
+      <div class="sbi-note">
+        <span class="sbi-icon">⚠️</span>
+        <div>
+          <h4>Important: SBI does NOT participate in IBPS SO</h4>
+          <p>State Bank of India conducts its <strong>own separate Specialist Cadre Officer (SCO) recruitment</strong> directly through <strong>sbi.co.in/careers</strong>, not through IBPS. If you want to join SBI as an IT specialist, watch for their SCO notifications (typically released 2–3 times a year for different tech roles like SDE, Manager-IT, etc). Also note: post the 2019–20 bank merger, Allahabad Bank, Corporation Bank, Andhra Bank, Syndicate Bank, Oriental Bank, United Bank, and Dena Bank no longer exist as separate entities.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ROADMAP ============ -->
+<section id="roadmap">
+  <div class="container">
+    <div class="section-head fade-up">
+      <div>
+        <div class="kicker">// 05 — Roadmap</div>
+        <h2>A 12-month plan<br/>that covers everything.</h2>
+      </div>
+      <p class="lead">Each phase tells you <strong>exactly how deep to go</strong> per topic — GATE-level conceptual depth is the sweet spot. Deeper won't hurt. Shallower will. Mocks begin from Month 6 onwards, ramping up as you near the exam.</p>
+    </div>
+
+    <!-- DEPTH LEGEND -->
+    <div class="bipartite-note fade-up" style="margin-bottom:40px">
+      <span class="bp-icon">🎯</span>
+      <div>
+        <h4>The Right Depth — A Quick Reality Check</h4>
+        <p><strong>GATE-level conceptual depth is more than enough</strong> for IBPS SO IT Officer. The exam tests breadth over depth: 60 MCQs across 10+ IT subjects in 45 minutes. You don't need LeetCode grinding — <strong>no competitive coding is required</strong>. The Professional Knowledge paper is 100% theory + conceptual MCQs (e.g. "Which layer does TCP operate at?", "What is 3NF?", "Time complexity of quicksort?"). Use LeetCode <em>only</em> for SQL practice if your DBMS is weak. Focus on understanding + PYQs + MCQ banks — that wins the paper.</p>
+      </div>
+    </div>
+
+    <div class="roadmap fade-up">
+
+      <!-- MONTH 1 -->
+      <div class="milestone">
+        <div class="milestone-head">
+          <span class="milestone-icon">🏗️</span>
+          <span class="milestone-phase">Month 1 · Weeks 1–4</span>
+          <h3>Foundation — DSA Part 1 + OS Basics</h3>
+        </div>
+        <ul>
+          <li><strong>DSA (Depth: GATE-level theory):</strong> Arrays, Strings, Linked Lists (single/double/circular), Stacks, Queues, Deques. <em>Focus on concepts + MCQs, NOT on solving LeetCode-style coding problems.</em></li>
+          <li><strong>OS (Depth: Textbook basics):</strong> Process vs Thread, Process states, Context switching, basic scheduling (FCFS, SJF, RR). Galvin Ch 1–5 level is enough.</li>
+          <li><strong>Quant:</strong> Number System, Simplification, Percentages. 15 problems/day.</li>
+          <li><strong>Reasoning:</strong> Syllogisms, Inequalities, Coding-Decoding. 15 problems/day.</li>
+          <li><strong>Completion target: ~8% of total syllabus.</strong></li>
+        </ul>
+        <div class="milestone-resources">
+          <div class="milestone-resources-label">▸ Free Resources</div>
+          <div class="mr-grid">
+            <a href="https://www.youtube.com/playlist?list=PLIY8eNdw5tW_zX3OCzX7NVvOu_cCgTkYE" target="_blank" rel="noopener" class="mr-chip">Gate Smashers · DSA</a>
+            <a href="https://www.youtube.com/playlist?list=PLmXKhU9FNesSFvj6gASuWmQd23Ul5omtD" target="_blank" rel="noopener" class="mr-chip">Gate Smashers · OS</a>
+            <a href="https://www.geeksforgeeks.org/data-structures/" target="_blank" rel="noopener" class="mr-chip">GFG · Data Structures</a>
+            <a href="https://www.youtube.com/@Adda247" target="_blank" rel="noopener" class="mr-chip">Adda247 · Quant</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- MONTH 2 -->
+      <div class="milestone">
+        <div class="milestone-head">
+          <span class="milestone-icon">🌲</span>
+          <span class="milestone-phase">Month 2 · Weeks 5–8</span>
+          <h3>DSA Part 2 + OS Deep Dive</h3>
+        </div>
+        <ul>
+          <li><strong>DSA (Depth: Know definitions + time/space complexity):</strong> Trees (Binary Tree, BST, AVL, Heaps), Graphs (BFS, DFS — just theory), Hashing basics. <em>You won't be asked to code — just recognize the right algorithm and its complexity.</em></li>
+          <li><strong>DSA Sorting/Searching:</strong> Know Big-O of each (Bubble, Insertion, Merge, Quick, Heap sort + Binary Search). This is <strong>heavily tested</strong> — memorize the complexity table.</li>
+          <li><strong>OS (Depth: Conceptual + numerical):</strong> Deadlocks (Coffman conditions, Banker's Algorithm — practice 5 numericals), Memory management (paging, segmentation), Page replacement (FIFO, LRU, Optimal — numericals).</li>
+          <li><strong>Quant:</strong> Ratio, Averages, Profit & Loss, Time & Work.</li>
+          <li><strong>Completion target: ~18% of total syllabus.</strong></li>
+        </ul>
+        <div class="milestone-resources">
+          <div class="milestone-resources-label">▸ Free Resources</div>
+          <div class="mr-grid">
+            <a href="https://www.youtube.com/playlist?list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU" target="_blank" rel="noopener" class="mr-chip">Jenny · Trees &amp; Graphs</a>
+            <a href="https://www.youtube.com/@wifistudy" target="_blank" rel="noopener" class="mr-chip">Wifistudy · Aptitude</a>
+            <a href="https://www.sanfoundry.com/1000-operating-system-questions-answers/" target="_blank" rel="noopener" class="mr-chip">Sanfoundry · OS MCQs</a>
+            <a href="https://www.indiabix.com/computer-science/operating-systems-concepts/" target="_blank" rel="noopener" class="mr-chip">IndiaBix · OS</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- MONTH 3 -->
+      <div class="milestone">
+        <div class="milestone-head">
+          <span class="milestone-icon">🗄️</span>
+          <span class="milestone-phase">Month 3 · Weeks 9–12</span>
+          <h3>DBMS — The Highest ROI Subject</h3>
+        </div>
+        <ul>
+          <li><strong>DBMS (Depth: GATE-level, heavy focus):</strong> ER model, Relational algebra basics, <strong>SQL (joins, subqueries, aggregate functions — practice on LeetCode SQL problems!)</strong>, Normalization up to BCNF (must be able to identify NF given FDs).</li>
+          <li><strong>Transactions & ACID:</strong> Know each property + concurrency control (locks, 2PL). Very commonly asked.</li>
+          <li><strong>Indexing:</strong> B-tree vs B+ tree — conceptual understanding enough.</li>
+          <li><strong>LeetCode SQL tip:</strong> Do <em>only</em> the 50 Easy + 20 Medium SQL problems. This is the ONE place LeetCode helps.</li>
+          <li><strong>Continue Quant:</strong> Data Interpretation, Time-Speed-Distance.</li>
+          <li><strong>Completion target: ~30% of total syllabus.</strong></li>
+        </ul>
+        <div class="milestone-resources">
+          <div class="milestone-resources-label">▸ Free Resources</div>
+          <div class="mr-grid">
+            <a href="https://www.youtube.com/playlist?list=PLxCzCOWd7aiFAN6I8CuViBuCdJgiOkT2Y" target="_blank" rel="noopener" class="mr-chip">Gate Smashers · DBMS</a>
+            <a href="https://www.w3schools.com/sql/" target="_blank" rel="noopener" class="mr-chip">W3Schools · SQL</a>
+            <a href="https://leetcode.com/studyplan/top-sql-50/" target="_blank" rel="noopener" class="mr-chip">LeetCode · Top SQL 50</a>
+            <a href="https://sqlzoo.net/" target="_blank" rel="noopener" class="mr-chip">SQLZoo · Practice</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- MONTH 4 -->
+      <div class="milestone">
+        <div class="milestone-head">
+          <span class="milestone-icon">🌐</span>
+          <span class="milestone-phase">Month 4 · Weeks 13–16</span>
+          <h3>Computer Networks — Memorize the Layers</h3>
+        </div>
+        <ul>
+          <li><strong>Networks (Depth: Thorough, memorize key facts):</strong> OSI + TCP/IP layer-by-layer (know every protocol per layer by heart — <strong>this is guaranteed MCQ territory</strong>).</li>
+          <li><strong>Protocols:</strong> HTTP/HTTPS status codes, FTP (active vs passive), DNS, DHCP, SMTP, POP3, IMAP, TCP vs UDP differences.</li>
+          <li><strong>IP Addressing & Subnetting:</strong> Practice <strong>at least 40 subnetting numericals</strong> — this is scoring gold.</li>
+          <li><strong>Routing:</strong> Distance Vector vs Link State (conceptual only, no code).</li>
+          <li><strong>Reasoning:</strong> Puzzles, Seating Arrangements, Input-Output.</li>
+          <li><strong>Completion target: ~42% of total syllabus.</strong></li>
+        </ul>
+        <div class="milestone-resources">
+          <div class="milestone-resources-label">▸ Free Resources</div>
+          <div class="mr-grid">
+            <a href="https://www.youtube.com/playlist?list=PLxCzCOWd7aiGFBD2-2joCpWOLUrDLvVV_" target="_blank" rel="noopener" class="mr-chip">Gate Smashers · Networks</a>
+            <a href="https://www.youtube.com/c/nesoacademy" target="_blank" rel="noopener" class="mr-chip">Neso Academy · CN</a>
+            <a href="https://www.sanfoundry.com/computer-networks-questions-answers/" target="_blank" rel="noopener" class="mr-chip">Sanfoundry · CN MCQs</a>
+            <a href="https://www.subnettingpractice.com/" target="_blank" rel="noopener" class="mr-chip">Subnetting Practice</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- MONTH 5 -->
+      <div class="milestone">
+        <div class="milestone-head">
+          <span class="milestone-icon">⚙️</span>
+          <span class="milestone-phase">Month 5 · Weeks 17–20</span>
+          <h3>Software Engg + OOP + COA</h3>
+        </div>
+        <ul>
+          <li><strong>Software Engg (Depth: Surface-level, memorize):</strong> SDLC models (Waterfall, V-model, Spiral, Agile, RAD — pros/cons of each), testing types (Unit, Integration, System, Regression, Alpha, Beta), cohesion vs coupling. <em>This is pure memorization — no derivations.</em></li>
+          <li><strong>OOP (Depth: Core concepts only):</strong> 4 pillars, class vs object, interface vs abstract class, constructor types, method overloading vs overriding. <em>No need to write full Java/C++ programs — conceptual MCQs only.</em></li>
+          <li><strong>Computer Org & Arch:</strong> Number systems (binary/octal/hex conversions — practice!), logic gates, K-maps basics, cache mapping (direct/associative/set), pipelining basics.</li>
+          <li><strong>English:</strong> Start dedicated RC practice (2/day), vocabulary drills.</li>
+          <li><strong>Completion target: ~55% of total syllabus.</strong></li>
+        </ul>
+        <div class="milestone-resources">
+          <div class="milestone-resources-label">▸ Free Resources</div>
+          <div class="mr-grid">
+            <a href="https://www.tutorialspoint.com/software_engineering/" target="_blank" rel="noopener" class="mr-chip">TutorialsPoint · SE</a>
+            <a href="https://www.javatpoint.com/java-oops-concepts" target="_blank" rel="noopener" class="mr-chip">Javatpoint · OOP</a>
+            <a href="https://www.youtube.com/@KnowledgeGate_SanchitSir" target="_blank" rel="noopener" class="mr-chip">Knowledge Gate · COA</a>
+            <a href="https://www.indiabix.com/digital-electronics/questions-and-answers/" target="_blank" rel="noopener" class="mr-chip">IndiaBix · Digital Elec</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- MONTH 6 -->
+      <div class="milestone">
+        <div class="milestone-head">
+          <span class="milestone-icon">🔐</span>
+          <span class="milestone-phase">Month 6 · Weeks 21–24 · Mocks Begin!</span>
+          <h3>Cyber Security + Cloud + Web Tech + First Mocks</h3>
+        </div>
+        <ul>
+          <li><strong>Cyber Security (Depth: Definitions + examples):</strong> CIA triad, symmetric vs asymmetric encryption (AES, RSA, DES — know key sizes), hashing (MD5, SHA), firewalls (stateful vs stateless), IDS vs IPS, common attacks (SQLi, XSS, CSRF, phishing, MITM), digital signatures.</li>
+          <li><strong>Cloud (Depth: Conceptual only):</strong> IaaS/PaaS/SaaS differences (classic MCQ — know one example of each), public vs private vs hybrid cloud, containers vs VMs, hypervisor types.</li>
+          <li><strong>Web Tech (Depth: Surface):</strong> HTTP methods (GET/POST/PUT/DELETE), status codes (200, 301, 404, 500), REST principles, cookies vs sessions, basic web security.</li>
+          <li><strong>⚡ Start mocks this month:</strong> 1 sectional mock per week (rotate subjects). Analyze more than you attempt.</li>
+          <li><strong>Completion target: ~70% of total syllabus.</strong></li>
+        </ul>
+        <div class="milestone-resources">
+          <div class="milestone-resources-label">▸ Free Resources</div>
+          <div class="mr-grid">
+            <a href="https://testbook.com/objective-questions/mcq-on-cyber-security" target="_blank" rel="noopener" class="mr-chip">Testbook · Cyber Sec MCQs</a>
+            <a href="https://www.tutorialspoint.com/cloud_computing/" target="_blank" rel="noopener" class="mr-chip">TutorialsPoint · Cloud</a>
+            <a href="https://www.oliveboard.in/mock-tests/ibps-so-mock-test/" target="_blank" rel="noopener" class="mr-chip">Oliveboard · Free Mocks</a>
+            <a href="https://testbook.com/ibps-so" target="_blank" rel="noopener" class="mr-chip">Testbook · Mocks</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- MONTH 7 -->
+      <div class="milestone">
+        <div class="milestone-head">
+          <span class="milestone-icon">📝</span>
+          <span class="milestone-phase">Month 7 · Weeks 25–28 · Mock Intensity ↑</span>
+          <h3>First Full Revision + Regular Mocks</h3>
+        </div>
+        <ul>
+          <li><strong>First full revision:</strong> Go back through DSA, OS, DBMS, CN notes in order. Don't re-learn — just reinforce.</li>
+          <li><strong>MCQ drills:</strong> 30 subject MCQs per day from Sanfoundry/IndiaBix. Track accuracy topic-wise in a spreadsheet.</li>
+          <li><strong>⚡ Mocks (ramping up):</strong> 2 sectional mocks + 1 full-length Prelims mock per week.</li>
+          <li><strong>English & GA:</strong> Daily RC (3/day), start banking current affairs compilation.</li>
+          <li><strong>Completion target: ~80% of total syllabus.</strong></li>
+        </ul>
+        <div class="milestone-resources">
+          <div class="milestone-resources-label">▸ Free Resources</div>
+          <div class="mr-grid">
+            <a href="https://www.sanfoundry.com/" target="_blank" rel="noopener" class="mr-chip">Sanfoundry · All CS MCQs</a>
+            <a href="https://www.indiabix.com/" target="_blank" rel="noopener" class="mr-chip">IndiaBix · Topic-wise</a>
+            <a href="https://www.affairscloud.com/" target="_blank" rel="noopener" class="mr-chip">AffairsCloud · Daily GK</a>
+            <a href="https://www.gktoday.in/" target="_blank" rel="noopener" class="mr-chip">GKToday · Current Affairs</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- MONTH 8 -->
+      <div class="milestone">
+        <div class="milestone-head">
+          <span class="milestone-icon">📊</span>
+          <span class="milestone-phase">Month 8 · Weeks 29–32</span>
+          <h3>PYQ Assault + Weak-Area Fix</h3>
+        </div>
+        <ul>
+          <li><strong>PYQ focus:</strong> Solve all IBPS SO IT Officer papers from <strong>2019 → last cycle</strong> in timed conditions. That's ~5 years of papers.</li>
+          <li><strong>After each PYQ:</strong> List 3 weak topics. Revise those in the next 48 hours using your notes.</li>
+          <li><strong>⚡ Mocks:</strong> 2 full-length Prelims mocks + 1 full Mains mock per week.</li>
+          <li><strong>Accuracy target:</strong> 85%+ on subjects you've finished. If below 85% on any topic — it's not complete yet.</li>
+          <li><strong>Completion target: ~90% of total syllabus.</strong></li>
+        </ul>
+        <div class="milestone-resources">
+          <div class="milestone-resources-label">▸ Free PYQ Resources</div>
+          <div class="mr-grid">
+            <a href="https://www.adda247.com/bank/ibps-so-previous-year-question-paper/" target="_blank" rel="noopener" class="mr-chip">Adda247 · PYQs</a>
+            <a href="https://www.ibpsguide.com/ibps-so-previous-year-question-papers" target="_blank" rel="noopener" class="mr-chip">IBPS Guide · PYQs</a>
+            <a href="https://testbook.com/ibps-so/previous-year-papers" target="_blank" rel="noopener" class="mr-chip">Testbook · PYQs</a>
+            <a href="https://www.careerpower.in/ibps-so-previous-year-question-paper.html" target="_blank" rel="noopener" class="mr-chip">Career Power · PYQs</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- MONTH 9 -->
+      <div class="milestone">
+        <div class="milestone-head">
+          <span class="milestone-icon">🎯</span>
+          <span class="milestone-phase">Month 9 · Weeks 33–36</span>
+          <h3>Second Full Revision + Mock Intensity</h3>
+        </div>
+        <ul>
+          <li><strong>Second revision:</strong> Faster than first — focus only on flagged weak topics and formula sheets.</li>
+          <li><strong>Formula/Fact sheets:</strong> Make A4-size cheat sheets: CN protocols per layer, OS scheduling complexity, DBMS normal forms, sorting complexities.</li>
+          <li><strong>⚡ Mocks (peak intensity):</strong> 3 full Prelims + 2 full Mains mocks per week.</li>
+          <li><strong>Speed drill:</strong> Practice attempt order (easy-first strategy). Most toppers solve English → Quant → Reasoning.</li>
+          <li><strong>Completion target: 100% of syllabus covered.</strong></li>
+        </ul>
+        <div class="milestone-resources">
+          <div class="milestone-resources-label">▸ Free Resources</div>
+          <div class="mr-grid">
+            <a href="https://www.practicemock.com/ibps-so-free-mock-test-series/" target="_blank" rel="noopener" class="mr-chip">PracticeMock · Free Mocks</a>
+            <a href="https://www.oliveboard.in" target="_blank" rel="noopener" class="mr-chip">Oliveboard · Daily Mocks</a>
+            <a href="https://www.bankersadda.com/" target="_blank" rel="noopener" class="mr-chip">Bankers Adda · Quizzes</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- MONTH 10 -->
+      <div class="milestone">
+        <div class="milestone-head">
+          <span class="milestone-icon">⚡</span>
+          <span class="milestone-phase">Month 10 · Weeks 37–40 · Prelims Focus</span>
+          <h3>Prelims Sprint (if exam in Month 11)</h3>
+        </div>
+        <ul>
+          <li><strong>Dedicated Prelims prep:</strong> Daily schedule = 1 full Prelims mock + 2 hours analysis + 2 hours Mains revision.</li>
+          <li><strong>Sectional cutoff strategy:</strong> You need <em>each</em> section cleared. Identify your weakest section and over-index on it for 2 weeks.</li>
+          <li><strong>Timing drills:</strong> Reasoning 50Q in 35 min, Quant 50Q in 35 min, English 25Q in 20 min. Practice this exact split.</li>
+          <li><strong>No new topics this month.</strong> Revision only.</li>
+        </ul>
+        <div class="milestone-resources">
+          <div class="milestone-resources-label">▸ Free Resources</div>
+          <div class="mr-grid">
+            <a href="https://testbook.com/ibps-so/mock-test" target="_blank" rel="noopener" class="mr-chip">Testbook · Prelims Mocks</a>
+            <a href="https://www.adda247.com/mock-test-online" target="_blank" rel="noopener" class="mr-chip">Adda247 · Mocks</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- MONTH 11 -->
+      <div class="milestone">
+        <div class="milestone-head">
+          <span class="milestone-icon">🏆</span>
+          <span class="milestone-phase">Month 11 · Weeks 41–44 · Prelims Exam Month</span>
+          <h3>Prelims Exam → Instant Mains Pivot</h3>
+        </div>
+        <ul>
+          <li><strong>Last week before Prelims:</strong> Only revision + 1 light mock every 2 days. Sleep well. No new material.</li>
+          <li><strong>Day of Prelims:</strong> Reach 90 min early. Trust your prep.</li>
+          <li><strong>Day after Prelims:</strong> Immediately pivot to Mains — the gap is only 4–6 weeks.</li>
+          <li><strong>Mains focus:</strong> Professional Knowledge is 80% of your score weight. Revise DBMS, CN, OS, DSA hard.</li>
+          <li><strong>⚡ Mains mocks:</strong> 4 per week from this point.</li>
+        </ul>
+      </div>
+
+      <!-- MONTH 12 -->
+      <div class="milestone">
+        <div class="milestone-head">
+          <span class="milestone-icon">🎓</span>
+          <span class="milestone-phase">Month 12 · Weeks 45–48 · Mains + Interview</span>
+          <h3>Mains Exam + Interview Prep</h3>
+        </div>
+        <ul>
+          <li><strong>Last 2 weeks before Mains:</strong> 1 full Mains mock daily. Zero new concepts. Cheat sheets only.</li>
+          <li><strong>Professional Knowledge last-mile:</strong> Revise all PYQ Professional Knowledge sections twice. Patterns repeat.</li>
+          <li><strong>Interview prep (starts Day 1 after Mains):</strong> HR questions, 2-minute self-intro, banking awareness, 5 tech scenario questions per core subject.</li>
+          <li><strong>Look the part:</strong> Formal attire, clean shoes, confident body language. Dress code matters in PSU interviews.</li>
+          <li><strong>Interview weightage:</strong> Mains 80% + Interview 20%. A strong Mains score is your buffer.</li>
+        </ul>
+        <div class="milestone-resources">
+          <div class="milestone-resources-label">▸ Interview Prep</div>
+          <div class="mr-grid">
+            <a href="https://www.youtube.com/@Oliveboard" target="_blank" rel="noopener" class="mr-chip">Oliveboard · Interview</a>
+            <a href="https://www.youtube.com/@bankersadda" target="_blank" rel="noopener" class="mr-chip">Bankers Adda · Interview</a>
+            <a href="https://www.indiabix.com/hr-interview/questions-and-answers/" target="_blank" rel="noopener" class="mr-chip">IndiaBix · HR Qs</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SALARY & CAREER ============ -->
+<section id="salary" style="background:var(--bg-2)">
+  <div class="container">
+    <div class="section-head fade-up">
+      <div>
+        <div class="kicker">// 06 — Salary &amp; Career Growth</div>
+        <h2>The money, the ladder,<br/>and the bipartite bump.</h2>
+      </div>
+      <p class="lead">Post the 12th Bipartite Settlement, IBPS SO IT Officer offers one of the most attractive compensation packages in the government IT space. Here's exactly what you'll earn.</p>
+    </div>
+
+    <!-- KEY STATS -->
+    <div class="salary-hero fade-up">
+      <div>
+        <div class="salary-stat-label">Starting Basic Pay</div>
+        <div class="salary-stat-value">₹48,480</div>
+        <div class="salary-stat-sub">per month</div>
+      </div>
+      <div>
+        <div class="salary-stat-label">In-Hand (Monthly)</div>
+        <div class="salary-stat-value">₹65K–70K</div>
+        <div class="salary-stat-sub">varies by posting city</div>
+      </div>
+      <div>
+        <div class="salary-stat-label">Gross (Monthly)</div>
+        <div class="salary-stat-value">₹78,000+</div>
+        <div class="salary-stat-sub">before deductions</div>
+      </div>
+      <div>
+        <div class="salary-stat-label">Annual CTC</div>
+        <div class="salary-stat-value">₹9–13 L</div>
+        <div class="salary-stat-sub">incl. all allowances</div>
+      </div>
+    </div>
+
+    <!-- SALARY BREAKDOWN -->
+    <div class="breakdown-wrap fade-up">
+      <div class="breakdown-title">Monthly Salary Breakdown · Scale I (post 12th Bipartite)</div>
+      <table class="breakdown-table">
+        <thead>
+          <tr>
+            <th>Component</th>
+            <th>Description</th>
+            <th>Amount (approx.)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Basic Pay</td><td>Entry-level basic for Scale I officer</td><td>₹48,480</td></tr>
+          <tr><td>Dearness Allowance (DA)</td><td>~36% of basic (revised quarterly)</td><td>₹17,450</td></tr>
+          <tr><td>HRA</td><td>7–9% of basic (depends on city class)</td><td>₹3,880–4,360</td></tr>
+          <tr><td>Special Allowance</td><td>7.75% of basic</td><td>₹3,757</td></tr>
+          <tr><td>City Compensatory Allowance</td><td>3–4% in select cities</td><td>₹1,455–1,940</td></tr>
+          <tr><td>Other Perks</td><td>LTA, medical, newspaper, learning</td><td>₹1,500–2,500</td></tr>
+          <tr class="highlight"><td>Gross Salary</td><td>Before deductions</td><td>~₹78,000</td></tr>
+          <tr class="deduct"><td>PF + NPS + Tax</td><td>Statutory deductions</td><td>–₹7,000 to –₹9,000</td></tr>
+          <tr class="highlight"><td>In-Hand (Net)</td><td>What actually lands in your account</td><td>~₹70,000</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ANNUAL PROGRESSION -->
+    <div class="fade-up">
+      <div class="breakdown-title" style="margin-bottom:22px">How Your Basic Pay Grows · Year by Year</div>
+      <p style="color:var(--text-dim);margin-bottom:24px;max-width:800px;font-size:0.98rem">
+        The pay scale is structured as <strong style="color:var(--accent)">₹48,480–2000/7–₹62,480–2340/2–₹67,160–2680/7–₹85,920</strong>. That means: <strong>+₹2,000</strong> increment each year for 7 years, then <strong>+₹2,340</strong> for 2 years, then <strong>+₹2,680</strong> for 7 years — a total of 16 annual increments over the Scale I pay band.
+      </p>
+      <div class="progression">
+        <div class="prog-card">
+          <div class="prog-year">Year 1 · Joining</div>
+          <div class="prog-basic">₹48,480<span class="label">Basic Pay</span></div>
+          <div class="prog-gross">Gross ~₹78,000</div>
+        </div>
+        <div class="prog-card">
+          <div class="prog-year">Year 2</div>
+          <div class="prog-basic">₹50,480<span class="label">+₹2,000 increment</span></div>
+          <div class="prog-gross">Gross ~₹81,000</div>
+        </div>
+        <div class="prog-card">
+          <div class="prog-year">Year 3</div>
+          <div class="prog-basic">₹52,480<span class="label">+₹2,000 increment</span></div>
+          <div class="prog-gross">Gross ~₹84,000</div>
+        </div>
+        <div class="prog-card">
+          <div class="prog-year">Year 5</div>
+          <div class="prog-basic">₹56,480<span class="label">4 increments applied</span></div>
+          <div class="prog-gross">Gross ~₹90,000</div>
+        </div>
+        <div class="prog-card">
+          <div class="prog-year">Year 8</div>
+          <div class="prog-basic">₹62,480<span class="label">end of +2000 band</span></div>
+          <div class="prog-gross">Gross ~₹99,500</div>
+        </div>
+        <div class="prog-card">
+          <div class="prog-year">Year 10</div>
+          <div class="prog-basic">₹67,160<span class="label">end of +2340 band</span></div>
+          <div class="prog-gross">Gross ~₹1.07 L</div>
+        </div>
+        <div class="prog-card">
+          <div class="prog-year">Year 16+ · Max Scale I</div>
+          <div class="prog-basic">₹85,920<span class="label">top of pay band</span></div>
+          <div class="prog-gross">Gross ~₹1.35 L+</div>
+        </div>
+      </div>
+      <p style="color:var(--text-mute);font-size:0.85rem;margin-top:14px">
+        💡 <strong>Note:</strong> These figures assume you stay in Scale I the entire time. In reality, most officers get promoted to Scale II (Manager) in 3–5 years, which significantly accelerates the salary curve.
+      </p>
+    </div>
+
+    <!-- QUARTERLY DA UPDATE -->
+    <div class="bipartite-note fade-up" style="margin-top:40px">
+      <span class="bp-icon">📈</span>
+      <div>
+        <h4>Quarterly DA Revision</h4>
+        <p>Dearness Allowance is revised <strong>every 3 months</strong> (Feb, May, Aug, Nov) based on the CPI (Consumer Price Index). When inflation rises, your DA — and consequently your in-hand salary — automatically goes up. In recent years, DA has been hovering around 30–40% of basic pay, which is a meaningful quarterly boost of ₹500–₹1,500 on average.</p>
+      </div>
+    </div>
+
+    <!-- BIPARTITE SETTLEMENT -->
+    <div class="bipartite-note fade-up">
+      <span class="bp-icon">🎯</span>
+      <div>
+        <h4>What Happens After the Next Bipartite Settlement?</h4>
+        <p>Bank officer pay is renegotiated every 5 years through the <strong>Bipartite Settlement</strong> (between the IBA and bank unions). The <strong>12th Bipartite</strong> revised pay w.e.f. Nov 2022, raising basic pay roughly <strong>17–18%</strong> and merging a portion of DA into basic. The next revision (13th Bipartite) is due around late 2027. Based on historical trends, expect a further 15–20% hike in basic pay, retrospective arrears covering multiple months, and updated DA/HRA slabs. <strong>Real impact:</strong> a Scale I officer at ~₹65K in-hand today could cross ₹80K in-hand purely from the settlement — no promotion needed.</p>
+      </div>
+    </div>
+
+    <!-- PROMOTION LADDER -->
+    <div class="fade-up" style="margin-top:50px">
+      <div class="breakdown-title" style="margin-bottom:22px">The Promotion Ladder · 7 Scales to the Top</div>
+      <p style="color:var(--text-dim);margin-bottom:24px;max-width:800px;font-size:0.98rem">
+        Promotions are a mix of <strong style="color:var(--accent)">seniority + internal exams + performance reviews + vacancy availability</strong>. JAIIB and CAIIB certifications accelerate progression — complete JAIIB by year 2 and CAIIB by year 4 to stay on track.
+      </p>
+      <div class="ladder">
+        <div class="ladder-step">
+          <div class="ladder-num">1</div>
+          <div class="ladder-meta">
+            <div class="ladder-role">Officer / Assistant Manager <span class="scale">Scale I</span></div>
+            <div class="ladder-desc">Entry level. 2-year probation → confirmed. Basic ₹48,480–85,920. In-hand ₹65–90K.</div>
+          </div>
+          <div class="ladder-time">Year 0–3</div>
+        </div>
+        <div class="ladder-step">
+          <div class="ladder-num">2</div>
+          <div class="ladder-meta">
+            <div class="ladder-role">Manager <span class="scale">Scale II</span></div>
+            <div class="ladder-desc">First promotion via internal exam. Mid-management role. In-hand ~₹90K–1.1 L.</div>
+          </div>
+          <div class="ladder-time">Year 3–5</div>
+        </div>
+        <div class="ladder-step">
+          <div class="ladder-num">3</div>
+          <div class="ladder-meta">
+            <div class="ladder-role">Senior Manager <span class="scale">Scale III</span></div>
+            <div class="ladder-desc">Team lead / specialist head. In-hand ~₹1.1 L–1.4 L.</div>
+          </div>
+          <div class="ladder-time">Year 6–10</div>
+        </div>
+        <div class="ladder-step">
+          <div class="ladder-num">4</div>
+          <div class="ladder-meta">
+            <div class="ladder-role">Chief Manager <span class="scale">Scale IV</span></div>
+            <div class="ladder-desc">Senior specialist / department lead. In-hand ~₹1.4 L–1.6 L.</div>
+          </div>
+          <div class="ladder-time">Year 10–15</div>
+        </div>
+        <div class="ladder-step">
+          <div class="ladder-num">5</div>
+          <div class="ladder-meta">
+            <div class="ladder-role">Assistant General Manager <span class="scale">Scale V</span></div>
+            <div class="ladder-desc">Senior leadership. In-hand ~₹1.6 L–1.9 L.</div>
+          </div>
+          <div class="ladder-time">Year 15–20</div>
+        </div>
+        <div class="ladder-step">
+          <div class="ladder-num">6</div>
+          <div class="ladder-meta">
+            <div class="ladder-role">Deputy General Manager <span class="scale">Scale VI</span></div>
+            <div class="ladder-desc">Executive level. In-hand ~₹1.9 L–2.3 L.</div>
+          </div>
+          <div class="ladder-time">Year 20–25</div>
+        </div>
+        <div class="ladder-step">
+          <div class="ladder-num">7</div>
+          <div class="ladder-meta">
+            <div class="ladder-role">General Manager <span class="scale">Scale VII</span></div>
+            <div class="ladder-desc">Top executive tier. In-hand ~₹2.5 L–3.5 L. Only ~1–2% of officers reach here.</div>
+          </div>
+          <div class="ladder-time">Year 25–30</div>
+        </div>
+      </div>
+      <p style="color:var(--text-mute);font-size:0.85rem;margin-top:20px">
+        ⚠️ <strong>Reality check:</strong> Timelines are approximate and heavily depend on vacancies, your bank's internal policy, and performance. Most officers retire at Scale IV–V, ~30–35% reach Scale VI (DGM), and only a small minority make it to GM.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUIZ ============ -->
+<section id="quiz">
+  <div class="container">
+    <div class="section-head fade-up">
+      <div>
+        <div class="kicker">// 07 — Model Questions</div>
+        <h2>10 questions.<br/>Quick diagnostic.</h2>
+      </div>
+      <p class="lead">A mix of IT Professional Knowledge and General Aptitude to gauge where you stand. No time limit — focus on understanding.</p>
+    </div>
+
+    <div class="quiz-box fade-up" id="quizBox">
+      <div class="quiz-meta">
+        <span class="quiz-category" id="qCategory">IT · Professional Knowledge</span>
+        <span id="qNumber">01 / 10</span>
+      </div>
+      <div class="quiz-progress"><div class="quiz-progress-bar" id="qProgressBar" style="width:10%"></div></div>
+      <div class="quiz-question" id="qText">Loading...</div>
+      <div class="quiz-options" id="qOptions"></div>
+      <div class="quiz-explanation" id="qExplain"></div>
+      <div class="quiz-controls">
+        <span class="quiz-score">Score: <strong id="qScore">0</strong> / 10</span>
+        <button class="btn btn-primary" id="qNext" style="display:none">Next Question <span class="arrow">→</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FREE RESOURCES ============ -->
+<section id="resources" style="background:var(--bg-2)">
+  <div class="container">
+    <div class="section-head fade-up">
+      <div>
+        <div class="kicker">// 08 — Free Resources</div>
+        <h2>YouTube channels<br/>worth your time.</h2>
+      </div>
+      <p class="lead">All free. All vetted. Pick channels that match your learning style — don't try to watch all of them.</p>
+    </div>
+
+    <div class="resource-grid fade-up">
+      <div class="resource-card">
+        <div class="resource-name">Gate Smashers</div>
+        <p class="resource-desc">Crystal-clear explanations of core CS subjects. Perfect for the Professional Knowledge paper.</p>
+        <div class="tag-row">
+          <span class="tag">OS</span><span class="tag">DBMS</span><span class="tag">Networks</span><span class="tag">DSA</span>
+        </div>
+        <a href="https://www.youtube.com/c/GateSmashers" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-name">Knowledge Gate</div>
+        <p class="resource-desc">Structured playlists across all major computer science subjects — great for systematic learning.</p>
+        <div class="tag-row">
+          <span class="tag">CS Core</span><span class="tag">Theory</span>
+        </div>
+        <a href="https://www.youtube.com/@KnowledgeGate_SanchitSir" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-name">Jenny's Lectures</div>
+        <p class="resource-desc">Beginner-friendly DSA lectures that build intuition from the ground up.</p>
+        <div class="tag-row">
+          <span class="tag">DSA</span><span class="tag">C++</span>
+        </div>
+        <a href="https://www.youtube.com/@JennyslecturesCSIT" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-name">Neso Academy</div>
+        <p class="resource-desc">Excellent theoretical depth — strong for Networks, DBMS, and digital electronics topics.</p>
+        <div class="tag-row">
+          <span class="tag">Networks</span><span class="tag">DBMS</span>
+        </div>
+        <a href="https://www.youtube.com/c/nesoacademy" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-name">Adda247</div>
+        <p class="resource-desc">Daily live classes on banking Quant, Reasoning, and English — the go-to for general sections.</p>
+        <div class="tag-row">
+          <span class="tag amber">Quant</span><span class="tag amber">Reasoning</span><span class="tag amber">English</span>
+        </div>
+        <a href="https://www.youtube.com/c/Adda247" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-name">Oliveboard</div>
+        <p class="resource-desc">Dedicated IBPS SO strategy videos, mock analyses, and exam-specific tips.</p>
+        <div class="tag-row">
+          <span class="tag">Strategy</span><span class="tag amber">Mocks</span>
+        </div>
+        <a href="https://www.youtube.com/c/Oliveboard" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-name">Study Smart</div>
+        <p class="resource-desc">Banking awareness and current affairs distilled into digestible daily videos.</p>
+        <div class="tag-row">
+          <span class="tag amber">GK</span><span class="tag amber">Current Affairs</span>
+        </div>
+        <a href="https://www.youtube.com/@StudySmart" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-name">Unacademy</div>
+        <p class="resource-desc">IBPS SO specific playlists covering the entire syllabus with top educators.</p>
+        <div class="tag-row">
+          <span class="tag">IBPS SO</span><span class="tag">Full Syllabus</span>
+        </div>
+        <a href="https://www.youtube.com/c/UnacademyBanking" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-name">Wifistudy</div>
+        <p class="resource-desc">Free live classes on Quant, Reasoning, and English with excellent teachers for banking exams.</p>
+        <div class="tag-row">
+          <span class="tag amber">Quant</span><span class="tag amber">Reasoning</span>
+        </div>
+        <a href="https://www.youtube.com/@wifistudy" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-name">Career Ride</div>
+        <p class="resource-desc">Aptitude, logical reasoning, and interview prep — a long-standing free resource library.</p>
+        <div class="tag-row">
+          <span class="tag amber">Aptitude</span><span class="tag">Interview</span>
+        </div>
+        <a href="https://www.youtube.com/@CareerRide" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-name">Maths Smart</div>
+        <p class="resource-desc">Quant shortcuts and tricks for solving complex problems in under 30 seconds.</p>
+        <div class="tag-row">
+          <span class="tag amber">Quant Tricks</span><span class="tag amber">Speed</span>
+        </div>
+        <a href="https://www.youtube.com/@MathsSmart" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-name">Dharmendra Sir · English</div>
+        <p class="resource-desc">Grammar, vocabulary, and comprehension tailored for banking and SSC aspirants.</p>
+        <div class="tag-row">
+          <span class="tag amber">English</span><span class="tag amber">Grammar</span>
+        </div>
+        <a href="https://www.youtube.com/@DharmendraSirEnglish" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-name">GKToday</div>
+        <p class="resource-desc">Daily current affairs, monthly compilations, and banking awareness content — all free.</p>
+        <div class="tag-row">
+          <span class="tag amber">Current Affairs</span><span class="tag amber">Banking GK</span>
+        </div>
+        <a href="https://www.gktoday.in/" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-name">Bankers Adda</div>
+        <p class="resource-desc">Daily topic-wise quizzes, articles, and banking awareness — the unofficial daily feed for aspirants.</p>
+        <div class="tag-row">
+          <span class="tag free">Free Quizzes</span><span class="tag amber">Banking GK</span>
+        </div>
+        <a href="https://www.bankersadda.com/" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-name">AffairsCloud</div>
+        <p class="resource-desc">Current affairs capsules, monthly PDFs, and banking awareness specifically tuned for bank exams.</p>
+        <div class="tag-row">
+          <span class="tag amber">Current Affairs</span><span class="tag free">Free PDFs</span>
+        </div>
+        <a href="https://www.affairscloud.com/" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-name">GeeksforGeeks</div>
+        <p class="resource-desc">Deep reference for every CS topic — DSA, DBMS, OS, Networks. Paired with practice MCQs.</p>
+        <div class="tag-row">
+          <span class="tag">DSA</span><span class="tag">CS Core</span><span class="tag free">Free</span>
+        </div>
+        <a href="https://www.geeksforgeeks.org/" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-name">Sanfoundry</div>
+        <p class="resource-desc">Topic-wise MCQ bank for every CS subject — great for daily 20-question drills.</p>
+        <div class="tag-row">
+          <span class="tag">MCQs</span><span class="tag free">Free</span>
+        </div>
+        <a href="https://www.sanfoundry.com/" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PAID & MOCKS ============ -->
+<section id="paid">
+  <div class="container">
+    <div class="section-head fade-up">
+      <div>
+        <div class="kicker">// 09 — Paid Courses &amp; Mock Tests</div>
+        <h2>Invest where<br/>it compounds.</h2>
+      </div>
+      <p class="lead">One good structured course and a disciplined mock-test series can fast-track your preparation significantly.</p>
+    </div>
+
+    <div class="resource-split fade-up">
+      <div class="paid">
+        <h3>Paid Courses</h3>
+        <div class="resource-grid" style="grid-template-columns:1fr;gap:14px">
+          <div class="resource-card">
+            <div class="resource-name">Adda247 IBPS SO IT Officer</div>
+            <p class="resource-desc">Full course with live classes, recorded lectures, and test series for the Professional Knowledge paper.</p>
+            <div class="tag-row"><span class="tag paid">Paid</span><span class="tag">Live + Recorded</span></div>
+            <a href="https://www.adda247.com" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+          </div>
+          <div class="resource-card">
+            <div class="resource-name">Oliveboard IBPS SO Package</div>
+            <p class="resource-desc">Comprehensive course with video lessons, e-books, and a generous mock test package bundled in.</p>
+            <div class="tag-row"><span class="tag paid">Paid</span><span class="tag">Video + Mocks</span></div>
+            <a href="https://www.oliveboard.in" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+          </div>
+          <div class="resource-card">
+            <div class="resource-name">Testbook IBPS SO</div>
+            <p class="resource-desc">Affordable Pass-Pro subscription covering IBPS SO plus many other government exams.</p>
+            <div class="tag-row"><span class="tag paid">Paid</span><span class="tag">Subscription</span></div>
+            <a href="https://testbook.com" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+          </div>
+          <div class="resource-card">
+            <div class="resource-name">Unacademy IBPS SO Plus</div>
+            <p class="resource-desc">Structured batches with top educators, doubt-clearing sessions, and regular mock tests.</p>
+            <div class="tag-row"><span class="tag paid">Paid</span><span class="tag">Batches</span></div>
+            <a href="https://unacademy.com" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mock">
+        <h3>Mock Test Platforms</h3>
+        <div class="resource-grid" style="grid-template-columns:1fr;gap:14px">
+          <div class="resource-card">
+            <div class="resource-name">Oliveboard Free Mocks</div>
+            <p class="resource-desc">A solid library of free IBPS SO mocks with detailed analytics after every attempt.</p>
+            <div class="tag-row"><span class="tag free">Free</span><span class="tag amber">Analytics</span></div>
+            <a href="https://www.oliveboard.in" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+          </div>
+          <div class="resource-card">
+            <div class="resource-name">Testbook Mocks</div>
+            <p class="resource-desc">Large mock series for both Prelims and Mains, topic-wise tests included.</p>
+            <div class="tag-row"><span class="tag free">Free Tier</span><span class="tag paid">Paid</span></div>
+            <a href="https://testbook.com" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+          </div>
+          <div class="resource-card">
+            <div class="resource-name">Adda247 Mocks</div>
+            <p class="resource-desc">Consistently well-designed question papers that closely mirror real exam difficulty.</p>
+            <div class="tag-row"><span class="tag paid">Paid</span><span class="tag amber">High Quality</span></div>
+            <a href="https://www.adda247.com" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+          </div>
+          <div class="resource-card">
+            <div class="resource-name">IBPS Official Practice</div>
+            <p class="resource-desc">Official online practice link from IBPS — use before the exam to familiarise with the UI.</p>
+            <div class="tag-row"><span class="tag free">Free</span><span class="tag">Official</span></div>
+            <a href="https://www.ibps.in" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+          </div>
+          <div class="resource-card">
+            <div class="resource-name">IndiaBix</div>
+            <p class="resource-desc">Free topic-wise MCQ practice for CS subjects — perfect for daily drills.</p>
+            <div class="tag-row"><span class="tag free">Free</span><span class="tag">Topic-wise</span></div>
+            <a href="https://www.indiabix.com" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+          </div>
+          <div class="resource-card">
+            <div class="resource-name">Career Power Mocks</div>
+            <p class="resource-desc">Adda247's mock platform with sectional and full-length tests for banking exams.</p>
+            <div class="tag-row"><span class="tag paid">Paid</span></div>
+            <a href="https://www.careerpower.in" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PYQs ============ -->
+<section id="pyqs" style="background:var(--bg-2)">
+  <div class="container">
+    <div class="section-head fade-up">
+      <div>
+        <div class="kicker">// 10 — Free Previous Year Papers</div>
+        <h2>Solve real papers.<br/>Skip the guesswork.</h2>
+      </div>
+      <p class="lead">Nothing teaches you the IBPS SO exam better than past papers. All links below are <strong style="color:var(--green)">completely free</strong> — no sign-up paywalls.</p>
+    </div>
+
+    <div class="resource-grid fade-up">
+      <div class="resource-card">
+        <div class="resource-name">IBPS Official Archive</div>
+        <p class="resource-desc">Official notifications and sample papers directly from the IBPS website. Start here.</p>
+        <div class="tag-row">
+          <span class="tag free">Free</span><span class="tag">Official</span>
+        </div>
+        <a href="https://www.ibps.in/common-recruitment-process-for-specialist-officers/" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-name">Adda247 · IBPS SO PYQs</div>
+        <p class="resource-desc">Year-wise memory-based question papers for IBPS SO IT Officer Prelims and Mains.</p>
+        <div class="tag-row">
+          <span class="tag free">Free</span><span class="tag">Prelims + Mains</span>
+        </div>
+        <a href="https://www.adda247.com/bank/ibps-so-previous-year-question-paper/" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-name">IBPS Guide · PYQs</div>
+        <p class="resource-desc">Detailed previous year paper repository with solutions and topic-wise breakdowns.</p>
+        <div class="tag-row">
+          <span class="tag free">Free</span><span class="tag">With Solutions</span>
+        </div>
+        <a href="https://www.ibpsguide.com/ibps-so-previous-year-question-papers" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-name">Oliveboard · IBPS SO PYQs</div>
+        <p class="resource-desc">Past papers with downloadable PDFs. Free account required for download.</p>
+        <div class="tag-row">
+          <span class="tag free">Free</span><span class="tag">PDF Download</span>
+        </div>
+        <a href="https://www.oliveboard.in/blog/ibps-so-previous-year-papers/" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-name">Testbook · IBPS SO PYQs</div>
+        <p class="resource-desc">Memory-based papers plus section-wise question breakdowns from past cycles.</p>
+        <div class="tag-row">
+          <span class="tag free">Free Tier</span><span class="tag">Solutions</span>
+        </div>
+        <a href="https://testbook.com/ibps-so/previous-year-papers" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-name">Bankers Adda · PYQ Blog</div>
+        <p class="resource-desc">Daily published question recalls and analysis from recent IBPS SO exam cycles.</p>
+        <div class="tag-row">
+          <span class="tag free">Free</span><span class="tag">Analysis</span>
+        </div>
+        <a href="https://www.bankersadda.com/category/ibps-so/" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-name">Career Power · PYQs</div>
+        <p class="resource-desc">Comprehensive archive of IBPS SO question papers with answer keys.</p>
+        <div class="tag-row">
+          <span class="tag free">Free</span><span class="tag">Answer Keys</span>
+        </div>
+        <a href="https://www.careerpower.in/ibps-so-previous-year-question-paper.html" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-name">Guidely · IBPS SO Papers</div>
+        <p class="resource-desc">Free PYQ practice with detailed solutions — particularly strong for Professional Knowledge.</p>
+        <div class="tag-row">
+          <span class="tag free">Free</span><span class="tag">IT Professional</span>
+        </div>
+        <a href="https://guidely.in/previous-year-question-papers/ibps-so-previous-year-question-papers" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-name">PracticeMock · Free Mocks + PYQs</div>
+        <p class="resource-desc">Free mock tests mirroring past papers, plus downloadable PYQ PDFs.</p>
+        <div class="tag-row">
+          <span class="tag free">Free Mocks</span><span class="tag">PDF</span>
+        </div>
+        <a href="https://www.practicemock.com/ibps-so-free-mock-test-series/" target="_blank" rel="noopener" class="resource-link">Visit <span class="arrow">→</span></a>
+      </div>
+    </div>
+
+    <div class="bipartite-note fade-up" style="margin-top:36px">
+      <span class="bp-icon">💡</span>
+      <div>
+        <h4>How to actually use PYQs</h4>
+        <p>Don't just read them — <strong>solve them in timed exam conditions</strong>. Use a kitchen timer or an online mock platform. After each paper, spend 2x the paper duration on analysis: what topics you missed, what traps you fell into, and which questions were pure knowledge vs. requiring intuition. <strong>Track your attempt count, accuracy, and time per section</strong> in a simple spreadsheet — patterns emerge fast, and that's where real improvement comes from.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <div class="brand" style="margin-bottom:14px">
+          <span class="brand-dot"></span>
+          IBPS<span style="color:var(--accent)">.</span>IT
+        </div>
+        <h4>An honest prep blueprint by Ishan Chakraborty.</h4>
+        <p>This site is for educational purposes only. Always verify vacancy counts, exam dates, and official syllabus from the official IBPS website before making any decisions. Good luck with your preparation! 🚀</p>
+      </div>
+      <div class="footer-col">
+        <h5>Official Links</h5>
+        <ul>
+          <li><a href="https://www.ibps.in" target="_blank" rel="noopener">IBPS Website</a></li>
+          <li><a href="https://www.ibps.in/common-recruitment-process-for-specialist-officers/" target="_blank" rel="noopener">Notifications</a></li>
+          <li><a href="https://www.ibps.in" target="_blank" rel="noopener">Syllabus PDF</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Nav</h5>
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#syllabus">Syllabus</a></li>
+          <li><a href="#roadmap">Roadmap</a></li>
+          <li><a href="#salary">Salary &amp; Career</a></li>
+          <li><a href="#quiz">Practice Quiz</a></li>
+          <li><a href="#pyqs">Previous Year Papers</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>// made by <span class="highlight">Ishan Chakraborty</span> · crafted with <span class="highlight">♥</span> for fellow aspirants</span>
+      <span>status: <span class="highlight">● online</span></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* ============ TYPEWRITER ============ */
+  const phrases = ["Crack the Exam", "Build Your Roadmap", "Land the Job"];
+  const typeEl = document.getElementById('typewriter');
+  let pi = 0, ci = 0, deleting = false;
+  function type() {
+    const word = phrases[pi];
+    if (!deleting) {
+      typeEl.textContent = word.slice(0, ++ci);
+      if (ci === word.length) { deleting = true; setTimeout(type, 1400); return; }
+    } else {
+      typeEl.textContent = word.slice(0, --ci);
+      if (ci === 0) { deleting = false; pi = (pi + 1) % phrases.length; }
+    }
+    setTimeout(type, deleting ? 40 : 80);
+  }
+  type();
+
+  /* ============ NAV TOGGLE (mobile) ============ */
+  document.getElementById('navToggle').addEventListener('click', () => {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+  document.querySelectorAll('.nav-a').forEach(a => {
+    a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
+  });
+
+  /* ============ ACTIVE NAV HIGHLIGHT ============ */
+  const sections = document.querySelectorAll('section, header.hero');
+  const navAs = document.querySelectorAll('.nav-a');
+  const sectionMap = {
+    'overview': 'overview',
+    'pattern': 'pattern',
+    'syllabus': 'syllabus',
+    'history': 'syllabus',
+    'roadmap': 'roadmap',
+    'salary': 'salary',
+    'quiz': 'quiz',
+    'resources': 'resources',
+    'paid': 'resources',
+    'pyqs': 'pyqs'
+  };
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(sec => {
+      const rect = sec.getBoundingClientRect();
+      if (rect.top <= 120 && rect.bottom >= 120) current = sec.id;
+    });
+    const mapped = sectionMap[current] || current;
+    navAs.forEach(a => {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + mapped);
+    });
+  });
+
+  /* ============ FADE-UP OBSERVER ============ */
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        // animate bar fills when visible
+        e.target.querySelectorAll('.bar-fill').forEach(b => {
+          b.style.width = b.dataset.width + '%';
+        });
+      }
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+
+  /* ============ SYLLABUS ACCORDION ============ */
+  document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+      const acc = header.parentElement;
+      const body = acc.querySelector('.accordion-body');
+      const isOpen = acc.classList.toggle('open');
+      body.style.maxHeight = isOpen ? body.scrollHeight + 'px' : '0';
+    });
+  });
+
+  /* ============ QUIZ ============ */
+  const questions = [
+    {
+      category: 'IT · Professional Knowledge',
+      type: 'it',
+      q: 'Which normal form removes transitive dependency from a relation?',
+      options: ['1NF', '2NF', '3NF', 'BCNF'],
+      answer: 2,
+      exp: '3NF (Third Normal Form) eliminates transitive dependencies. A non-prime attribute must not depend transitively on the primary key.'
+    },
+    {
+      category: 'IT · Professional Knowledge',
+      type: 'it',
+      q: 'What is the time complexity of Binary Search on a sorted array?',
+      options: ['O(n)', 'O(log n)', 'O(n log n)', 'O(1)'],
+      answer: 1,
+      exp: 'Binary Search repeatedly halves the search space, giving logarithmic time complexity — O(log n).'
+    },
+    {
+      category: 'IT · Professional Knowledge',
+      type: 'it',
+      q: 'Which of the following protocols operates at the Transport layer of the OSI model?',
+      options: ['IP', 'TCP', 'HTTP', 'ARP'],
+      answer: 1,
+      exp: 'TCP (Transmission Control Protocol) operates at Layer 4, the Transport layer. IP is at the Network layer, HTTP at Application, and ARP at Data Link.'
+    },
+    {
+      category: 'IT · Professional Knowledge',
+      type: 'it',
+      q: 'What does ACID stand for in the context of DBMS transactions?',
+      options: [
+        'Atomicity, Consistency, Isolation, Durability',
+        'Accuracy, Concurrency, Integrity, Data',
+        'Authorization, Control, Identity, Duplication',
+        'Availability, Concurrency, Integration, Delivery'
+      ],
+      answer: 0,
+      exp: 'ACID = Atomicity, Consistency, Isolation, Durability — the four core properties that guarantee reliable transaction processing in a database.'
+    },
+    {
+      category: 'IT · Professional Knowledge',
+      type: 'it',
+      q: 'Which scheduling algorithm is most likely to cause starvation?',
+      options: ['FCFS', 'Round Robin', 'Priority Scheduling', 'SJF (Preemptive)'],
+      answer: 2,
+      exp: 'Priority Scheduling can cause starvation — lower-priority processes may wait indefinitely if high-priority ones keep arriving. Aging is used to solve this.'
+    },
+    {
+      category: 'Quantitative Aptitude',
+      type: 'reasoning',
+      q: 'If the cost price of 20 articles equals the selling price of 16 articles, what is the profit percentage?',
+      options: ['20%', '25%', '30%', '16%'],
+      answer: 1,
+      exp: 'CP of 20 = SP of 16 → SP/CP = 20/16 = 5/4. Profit % = (1/4) × 100 = 25%.'
+    },
+    {
+      category: 'Reasoning',
+      type: 'reasoning',
+      q: 'In a certain code, COMPUTER is written as RFUVQNPC. How is MEDICINE written in the same code?',
+      options: ['EOJDJEFM', 'MFEDJJOE', 'EOJDEJFM', 'FOJDEJFM'],
+      answer: 0,
+      exp: 'Each letter of COMPUTER is shifted and the whole word is reversed. Applying the same pattern to MEDICINE gives EOJDJEFM.'
+    },
+    {
+      category: 'Quantitative Aptitude',
+      type: 'reasoning',
+      q: 'A train 150 m long crosses a pole in 15 seconds. What is its speed in km/hr?',
+      options: ['30 km/hr', '36 km/hr', '45 km/hr', '54 km/hr'],
+      answer: 1,
+      exp: 'Speed = 150 / 15 = 10 m/s. Convert: 10 × 18/5 = 36 km/hr.'
+    },
+    {
+      category: 'Reasoning',
+      type: 'reasoning',
+      q: 'If A is the brother of B, B is the sister of C, and C is the father of D, then how is A related to D?',
+      options: ['Brother', 'Uncle', 'Father', 'Grandfather'],
+      answer: 1,
+      exp: 'A is B\'s brother, and B is C\'s sister — so A is also C\'s brother. C is D\'s father, making A the paternal uncle of D.'
+    },
+    {
+      category: 'Quantitative Aptitude',
+      type: 'reasoning',
+      q: 'Find the next number in the series: 2, 6, 12, 20, 30, ?',
+      options: ['40', '42', '44', '48'],
+      answer: 1,
+      exp: 'Differences are 4, 6, 8, 10 → next is 12. So 30 + 12 = 42. (Pattern: n² + n).'
+    }
+  ];
+
+  let currentQ = 0;
+  let score = 0;
+  const qText = document.getElementById('qText');
+  const qOptions = document.getElementById('qOptions');
+  const qExplain = document.getElementById('qExplain');
+  const qNext = document.getElementById('qNext');
+  const qNumber = document.getElementById('qNumber');
+  const qCategory = document.getElementById('qCategory');
+  const qProgressBar = document.getElementById('qProgressBar');
+  const qScore = document.getElementById('qScore');
+  const quizBox = document.getElementById('quizBox');
+
+  function renderQuestion() {
+    const q = questions[currentQ];
+    qText.textContent = q.q;
+    qCategory.textContent = q.category;
+    qCategory.className = 'quiz-category' + (q.type === 'reasoning' ? ' reasoning' : '');
+    qNumber.textContent = String(currentQ + 1).padStart(2, '0') + ' / 10';
+    qProgressBar.style.width = ((currentQ + 1) / questions.length * 100) + '%';
+    qOptions.innerHTML = '';
+    qExplain.classList.remove('show');
+    qNext.style.display = 'none';
+    const letters = ['A', 'B', 'C', 'D'];
+    q.options.forEach((opt, idx) => {
+      const btn = document.createElement('button');
+      btn.className = 'quiz-option';
+      btn.innerHTML = `<span class="letter">${letters[idx]}</span><span>${opt}</span>`;
+      btn.addEventListener('click', () => handleAnswer(idx, btn));
+      qOptions.appendChild(btn);
+    });
+  }
+
+  function handleAnswer(selectedIdx, btn) {
+    const q = questions[currentQ];
+    const allBtns = qOptions.querySelectorAll('.quiz-option');
+    allBtns.forEach((b, i) => {
+      b.disabled = true;
+      if (i === q.answer) b.classList.add('correct');
+      if (i === selectedIdx && selectedIdx !== q.answer) b.classList.add('wrong');
+    });
+    if (selectedIdx === q.answer) {
+      score++;
+      qScore.textContent = score;
+    }
+    qExplain.innerHTML = '<strong>Explanation:</strong> ' + q.exp;
+    qExplain.classList.add('show');
+    qNext.style.display = 'inline-flex';
+    qNext.textContent = currentQ === questions.length - 1 ? 'See Results' : 'Next Question →';
+  }
+
+  qNext.addEventListener('click', () => {
+    if (currentQ === questions.length - 1) {
+      showResults();
+    } else {
+      currentQ++;
+      renderQuestion();
+    }
+  });
+
+  function showResults() {
+    const pct = Math.round(score / questions.length * 100);
+    let message = '';
+    if (pct === 100) message = 'Exceptional. You\'re exam-ready right now.';
+    else if (pct >= 70) message = 'Strong performance — polish the weak spots and you\'re golden.';
+    else if (pct >= 40) message = 'Solid foundation. More PYQs and topic revision will push you over the line.';
+    else message = 'You\'re early in your prep — that\'s fine. Use the roadmap and be consistent.';
+    quizBox.innerHTML = `
+      <div class="quiz-complete">
+        <h3>Quiz Complete</h3>
+        <div class="quiz-final-score">${score} / ${questions.length}</div>
+        <p>${message}</p>
+        <button class="btn btn-primary" onclick="location.reload()">Retake Quiz <span class="arrow">↻</span></button>
+      </div>
+    `;
+  }
+
+  renderQuestion();
+</script>
+
+</body>
+</html>
